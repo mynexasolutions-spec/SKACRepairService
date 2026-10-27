@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SK AC Repair Services in Jujhar Nagar, Chandigarh &amp; Mohali. Expert AC installation &amp; repair, washing machine repair, fridge gas charging, copper pipe fitting, geyser installation, and old AC buying. Call +91 7456884850 or +91 8923202164.">
+    <meta property="og:site_name" content="SK AC Repair Services">
+    <meta property="og:title" content="SK AC Repair Services – AC &amp; Home Appliance Repair in Chandigarh">
+    <meta property="og:description" content="AC installation, repair, washing machine, fridge gas charging, copper pipe fitting, geyser installation &amp; old AC buying in Jujhar Nagar, Chandigarh &amp; Mohali.">
+    <meta property="og:url" content="https://skacrepairservice.in">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://skacrepairservice.in{{ request.path }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='images/favicon/site.webmanifest') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon/favicon.ico') }}">
+    
+    <title>{% block title %}SK AC Repair Services – AC &amp; Appliance Repair in Chandigarh &amp; Mohali{% endblock %}</title>
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- Google Material Symbols (icons) -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+    <div class="top-bar">
+        <span><span class="material-symbols-outlined icon-inline">call</span> Call for urgent service: <a href="tel:+917456884850"><strong>+91 7456884850</strong></a> / <a href="tel:+918923202164"><strong>+91 8923202164</strong></a></span>
+        <span class="tb-sep">|</span>
+        <span>Same Day Services</span>
+        <span class="tb-sep">|</span>
+        <span>Jujhar Nagar, Chandigarh &amp; Mohali</span>
+    </div>
+
+    {% include 'includes/navbar.html' %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

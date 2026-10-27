@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block title %}Our Services – SK AC Repair Services | Chandigarh &amp; Mohali{% endblock %}
+
+{% block content %}
+
+<!-- BANNER -->
+<section class="srv-banner">
+  <img src="{{ url_for('static', filename='images/ac_repair_2.jpg') }}" alt="SK AC Repair Services" class="sb-bg" fetchpriority="high">
+  <h1 class="sb-ttl">Our Services</h1>
+</section>
+
+<!-- SERVICES LIST -->
+<div class="srv-sec">
+  <div id="cooling" class="srv-row">
+    <div class="srv-item">
+        <div class="srv-img-w rv-l"><img loading="lazy" src="{{ url_for('static', filename='images/services/split_and_window_air_conditioners.jpg') }}" alt="AC Installation and Repair" class="srv-img"></div>
+        <div class="srv-txt rv-r">
+        <div class="lbl">Expert Cooling</div>
+        <h3 class="srv-ttl">AC Installation, Repair &amp; Gas Charging</h3>
+        <p class="srv-desc">From new Split &amp; Window AC installations and shifting to foam-jet cleaning, PCB repairs, and genuine gas charging — we provide complete AC care across Chandigarh &amp; Mohali.</p>
+        <ul class="srv-points">
+            <li>Split &amp; Window AC Installation</li>
+            <li>Genuine Gas Charging (R32/R410A)</li>
+            <li>Foam-Jet Deep Wash</li>
+            <li>PCB &amp; Sensor Repair</li>
+            <li>Water Leakage &amp; Drain Fix</li>
+            <li>Cassette &amp; Commercial AC</li>
+        </ul>
+        <a href="/#contact" class="btn btn-sky">Book Now</a>
+        <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        </div>
+    </div>
+  </div>
+
+  <div id="copper-pipe" class="srv-row">
+    <div class="srv-item rev">
+        <div class="srv-img-w rv-r"><img loading="lazy" src="{{ url_for('static', filename='images/services/copper_pipe_fitting.jpg') }}" alt="Copper Pipe Fitting" class="srv-img"></div>
+        <div class="srv-txt rv-l">
+        <div class="lbl">Precision Piping</div>
+        <h3 class="srv-ttl">Copper Pipe Fitting</h3>
+        <p class="srv-desc">Professional concealed (underground) and open copper pipe fitting for new house constructions, renovations, flats, and commercial offices using heavy-gauge pure copper tubes.</p>
+        <ul class="srv-points">
+            <li>Underground Wall-Concealed Piping</li>
+            <li>Heavy-Gauge Pure Copper</li>
+            <li>High-Density Thermal Insulation</li>
+            <li>Leak-Proof Brazing Joints</li>
+            <li>Nitrogen Pressure Testing</li>
+            <li>Drain Pipe &amp; Wire Laying</li>
+        </ul>
+        <a href="/#contact" class="btn btn-sky">Book Now</a>
+        <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        </div>
+    </div>
+  </div>
+
+  <div id="washing" class="srv-row">
+    <div class="srv-item">
+        <div class="srv-img-w rv-l"><img loading="lazy" src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=900&q=80&fit=crop" alt="Washing Machine Repair" class="srv-img"></div>
+        <div class="srv-txt rv-r">
+        <div class="lbl">Appliance Care</div>
+        <h3 class="srv-ttl">Washing Machine Repair</h3>
+        <p class="srv-desc">Whether it's a noisy drum in your front-load or a spin motor issue in your top-load or semi-automatic machine, we deliver reliable doorstep repairs for every brand.</p>
+        <ul class="srv-points">
+            <li>Drum &amp; Bearing Repair</li>
+            <li>PCB Circuit Servicing</li>
+            <li>Motor &amp; Gearbox Fix</li>
+            <li>Water Inlet / Drain Pump</li>
+            <li>Spin Vibration &amp; Noise Fix</li>
+            <li>New Machine Installation</li>
+        </ul>
+        <a href="/#contact" class="btn btn-sky">Book Now</a>
+        <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        </div>
+    </div>
+  </div>
+
+  <div id="refrigerator" class="srv-row">
+    <div class="srv-item rev">
+        <div class="srv-img-w rv-r"><img loading="lazy" src="{{ url_for('static', filename='images/services/refrigerator_repair.jpg') }}" alt="Refrigerator Repair and Gas Charging" class="srv-img"></div>
+        <div class="srv-txt rv-l">
+        <div class="lbl">Cooling &amp; Gas Refill</div>
+        <h3 class="srv-ttl">Fridge Repair &amp; Gas Charging</h3>
+        <p class="srv-desc">Fast doorstep refrigeration repair and genuine gas charging for Single-Door, Double-Door, and Side-by-Side fridges so your food stays fresh without interruption.</p>
+        <ul class="srv-points">
+            <li>Fridge Gas Charging (R134a/R600a)</li>
+            <li>Compressor Repair &amp; Replacement</li>
+            <li>Thermostat &amp; Relay Fix</li>
+            <li>Defrost Timer &amp; Sensor Check</li>
+            <li>Choke &amp; Leakage Flashing</li>
+            <li>Door Rubber Gasket Seal</li>
+        </ul>
+        <a href="/#contact" class="btn btn-sky">Book Now</a>
+        <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        </div>
+    </div>
+  </div>
+
+  <div id="geyser" class="srv-row">
+    <div class="srv-item">
+        <div class="srv-img-w rv-l"><img loading="lazy" src="{{ url_for('static', filename='images/services/geyser_and_water_heater.jpg') }}" alt="Geyser Installation and Repair" class="srv-img"></div>
+        <div class="srv-txt rv-r">
+        <div class="lbl">Hot Water Safety</div>
+        <h3 class="srv-ttl">Geyser Installation &amp; Repair</h3>
+        <p class="srv-desc">Safe wall mounting, pipe fittings, and electrical heating element repairs for instant and storage geysers with full pressure-valve and earthing verification.</p>
+        <ul class="srv-points">
+            <li>New Geyser Installation</li>
+            <li>Heating Element Replacement</li>
+            <li>Thermostat &amp; Auto-Cut Fix</li>
+            <li>Pressure Safety Valve Setup</li>
+            <li>Tank Descaling &amp; Cleaning</li>
+            <li>Water Leakage Sealing</li>
+        </ul>
+        <a href="/#contact" class="btn btn-sky">Book Now</a>
+        <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        </div>
+    </div>
+  </div>
+
+  <div id="old-ac" class="srv-row">
+    <div class="srv-item rev">
+        <div class="srv-img-w rv-r"><img loading="lazy" src="{{ url_for('static', filename='images/services/old_ac_buying.jpg') }}" alt="Old AC Buying" class="srv-img"></div>
+        <div class="srv-txt rv-l">
+        <div class="lbl">Instant Cash / UPI</div>
+        <h3 class="srv-ttl">Old AC Buying (Best Market Price)</h3>
+        <p class="srv-desc">Upgrading your air conditioner or relocating? Sell your old, used, or non-working Split, Window, or Commercial AC to SK AC Repair Services for top instant value.</p>
+        <ul class="srv-points">
+            <li>Highest Price Guaranteed</li>
+            <li>Working &amp; Non-Working ACs</li>
+            <li>Free Safe Uninstallation</li>
+            <li>Free Same-Day Home Pickup</li>
+            <li>Instant Cash / UPI Payment</li>
+            <li>Home &amp; Bulk Office Lots</li>
+        </ul>
+        <a href="https://wa.me/917456884850?text=Hi%20SK%20AC%20Repair%2C%20I%20want%20to%20sell%20my%20old%20AC." target="_blank" rel="noopener noreferrer" class="btn btn-sky">Sell Old AC on WhatsApp</a>
+        <a href="tel:+917456884850" class="btn btn-outline" style="margin-left:12px">Call Now</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- CALL TO ACTION -->
+<section class="about-cta rv">
+  <div class="lbl" style="color:#fff; margin-bottom:12px">7 Days Support</div>
+  <h2 class="h2">Expert doorstep service is just a call away</h2>
+  <p class="body" style="max-width:550px">Serving Jujhar Nagar, 39 West Society, Chandigarh, Mohali &amp; Kharar with fast same-day response.</p>
+  <div class="hero-ctas" style="justify-content:center">
+    <a href="/#contact" class="btn btn-sky">Book Now</a>
+    <a href="tel:+917456884850" class="btn btn-ghost">Call +91 7456884850</a>
+    <a href="tel:+918923202164" class="btn btn-ghost">Call +91 8923202164</a>
+  </div>
+</section>
+
+{% endblock %}

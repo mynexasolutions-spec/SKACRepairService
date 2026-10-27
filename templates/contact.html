@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us – SK AC Repair Services | Jujhar Nagar, Chandigarh{% endblock %}
+
+{% block content %}
+
+<!-- BANNER -->
+<section class="cont-banner">
+  <img src="{{ url_for('static', filename='images/ac_repair_2.jpg') }}" alt="Contact SK AC Repair Services" class="cnt-bg">
+  <h1 class="cnt-ttl">Contact Us</h1>
+</section>
+
+<!-- CONTACT GRID -->
+<section class="cont-sec">
+  <div class="cont-grid">
+    <div class="cont-l rv-l">
+      <div class="lbl">Find Us</div>
+      <h2 class="h2">Visit our shop or reach out directly</h2>
+      
+      <div class="cont-map">
+        <iframe src="https://maps.google.com/maps?q=Jujhar+Nagar+39+West+Society+Near+Indian+Bank+Chandigarh+Mohali&t=&z=15&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="SK AC Repair Services Location Map"></iframe>
+      </div>
+
+      <div style="margin-top:-20px; margin-bottom:24px;">
+        <a href="https://maps.app.goo.gl/ckQh8qe3LMhciW176" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%; justify-content:center;">Open Exact Pin on Google Maps →</a>
+      </div>
+
+      <div class="soc-grid">
+        <a href="https://www.instagram.com/skacrepairservice" target="_blank" rel="noopener noreferrer" class="soc-card">
+          <span class="sc-ico sc-ig" aria-hidden="true">IG</span>
+          <div class="sc-n">Instagram</div>
+          <div class="sc-u">@skacrepairservice</div>
+        </a>
+        <a href="https://www.facebook.com/share/18gVt1EW87/" target="_blank" rel="noopener noreferrer" class="soc-card">
+          <span class="sc-ico sc-fb" aria-hidden="true">FB</span>
+          <div class="sc-n">Facebook</div>
+          <div class="sc-u">Sk Airconditioner Home Appliance</div>
+        </a>
+        <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="soc-card">
+          <span class="sc-ico sc-wa" aria-hidden="true">WA</span>
+          <div class="sc-n">WhatsApp</div>
+          <div class="sc-u">+91 74568 84850</div>
+        </a>
+        <a href="https://maps.app.goo.gl/ckQh8qe3LMhciW176" target="_blank" rel="noopener noreferrer" class="soc-card">
+          <span class="sc-ico sc-gmap" aria-hidden="true">G</span>
+          <div class="sc-n">Google Profile</div>
+          <div class="sc-u">Sk Ac Repair Services</div>
+        </a>
+      </div>
+
+      <div class="qr-showcase">
+        <a href="https://maps.app.goo.gl/ckQh8qe3LMhciW176" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src="{{ url_for('static', filename='images/google_qr.jpg') }}" alt="Sk Ac Repair Services Google QR">
+        </a>
+        <div class="qr-showcase-txt">
+          <h4>Scan Our Google QR</h4>
+          <p>Check out <strong>Sk Ac Repair Services</strong> on Google Maps &amp; leave us a review by scanning this QR code or clicking below.</p>
+          <a href="https://maps.app.goo.gl/ckQh8qe3LMhciW176" target="_blank" rel="noopener noreferrer" class="btn btn-sky" style="padding:10px 22px; font-size:0.84rem">View on Google</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cont-r rv-r" style="background:var(--white); padding:48px; border-radius:32px; box-shadow:var(--sh2); border:1px solid var(--border)">
+      <div class="lbl">Inquiry Form</div>
+      <h2 class="h2" style="font-size:2.2rem; margin:12px 0 24px">Book Your Slot</h2>
+      <p class="body" style="margin-bottom:32px">Fill in your details for fast doorstep service anywhere in Jujhar Nagar, Chandigarh &amp; Mohali.</p>
+      
+      <div class="f-group">
+        <label>Your Full Name</label>
+        <input type="text" id="cName" placeholder="Enter your name">
+      </div>
+      <div class="f-group">
+        <label>Phone Number</label>
+        <input type="tel" id="cPhone" placeholder="Enter your mobile number">
+      </div>
+      <div class="f-group">
+        <label>Select Locality</label>
+        <select id="cArea">
+          <option value="">Select Area in Chandigarh / Mohali</option>
+          <option value="Jujhar Nagar / 39 West Society">Jujhar Nagar / 39 West Society</option>
+          <option value="Sector 38 / 39, Chandigarh">Sector 38 / 39, Chandigarh</option>
+          <option value="Sector 40 / 41, Chandigarh">Sector 40 / 41, Chandigarh</option>
+          <option value="Maloya / Dadumajra">Maloya / Dadumajra</option>
+          <option value="Mohali Phase 1–11">Mohali Phase 1–11</option>
+          <option value="Sector 121 / 122, Mohali">Sector 121 / 122, Mohali</option>
+          <option value="Sector 15–37, Chandigarh">Sector 15–37, Chandigarh</option>
+          <option value="Sector 42–47, Chandigarh">Sector 42–47, Chandigarh</option>
+          <option value="Sunny Enclave / Kharar">Sunny Enclave / Kharar</option>
+          <option value="Zirakpur / Panchkula">Zirakpur / Panchkula</option>
+          <option value="Other Area (Tricity)">Other Area (Tricity)</option>
+        </select>
+      </div>
+      <div class="f-group">
+        <label>Service / Problem Details</label>
+        <textarea id="cDetails" placeholder="Example: AC installation, fridge gas charging, copper pipe fitting, geyser installation, or selling old AC"></textarea>
+      </div>
+
+      <button onclick="submitToWhatsapp()" style="width:100%; justify-content:center; padding:18px" class="btn btn-sky">Confirm Booking via WhatsApp</button>
+      
+      <div style="margin-top:32px; padding-top:32px; border-top:1px solid var(--border)">
+        <div style="display:flex; gap:20px; align-items:flex-start">
+          <div style="width:44px; height:44px; flex-shrink:0; background:var(--frost); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--sky)">📞</div>
+          <div>
+            <div style="font-weight:700; font-size:0.9rem">Contact Numbers</div>
+            <div style="font-size:0.86rem; color:var(--muted); margin-top:2px">
+              <a href="tel:+917456884850">+91 74568 84850</a> &nbsp;/&nbsp; <a href="tel:+918923202164">+91 89232 02164</a>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; gap:20px; align-items:flex-start; margin-top:18px">
+          <div style="width:44px; height:44px; flex-shrink:0; background:var(--frost); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--sky)">✉️</div>
+          <div>
+            <div style="font-weight:700; font-size:0.9rem">Email Address</div>
+            <div style="font-size:0.86rem; color:var(--muted); margin-top:2px">
+              <a href="mailto:skacrepairservice@gmail.com">skacrepairservice@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; gap:20px; align-items:flex-start; margin-top:18px">
+          <div style="width:44px; height:44px; flex-shrink:0; background:var(--frost); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--sky)">📍</div>
+          <div>
+            <div style="font-weight:700; font-size:0.9rem">Main Office</div>
+            <div style="font-size:0.84rem; color:var(--muted); margin-top:2px">
+              <a href="https://maps.app.goo.gl/ckQh8qe3LMhciW176" target="_blank" rel="noopener noreferrer">Jujhar Nagar, 39 West Society, Near Indian Bank of India, Chandigarh</a>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; gap:20px; align-items:flex-start; margin-top:18px">
+          <div style="width:44px; height:44px; flex-shrink:0; background:var(--frost); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--sky)">🕒</div>
+          <div>
+            <div style="font-weight:700; font-size:0.9rem">Service Hours</div>
+            <div style="font-size:0.84rem; color:var(--muted); margin-top:2px">Mon – Sun: 8:00 AM – 9:00 PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
