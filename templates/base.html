@@ -3,13 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SK AC Repair Services in Jujhar Nagar, Chandigarh &amp; Mohali. Expert AC installation &amp; repair, washing machine repair, fridge gas charging, copper pipe fitting, geyser installation, and old AC buying. Call +91 7456884850 or +91 8923202164.">
+    {% set site = 'https://skacrepairservice.in' %}
+    <meta name="description" content="{% block description %}AC repair, installation &amp; gas charging, fridge &amp; washing machine repair, geyser fitting and old AC buying in Chandigarh &amp; Mohali. Same-day service. Call +91 7456884850.{% endblock %}">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#111827">
     <meta property="og:site_name" content="SK AC Repair Services">
-    <meta property="og:title" content="SK AC Repair Services – AC &amp; Home Appliance Repair in Chandigarh">
-    <meta property="og:description" content="AC installation, repair, washing machine, fridge gas charging, copper pipe fitting, geyser installation &amp; old AC buying in Jujhar Nagar, Chandigarh &amp; Mohali.">
-    <meta property="og:url" content="https://skacrepairservice.in">
+    <meta property="og:locale" content="en_IN">
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://skacrepairservice.in{{ request.path }}">
+    <meta property="og:title" content="{{ self.title() }}">
+    <meta property="og:description" content="{{ self.description() }}">
+    <meta property="og:url" content="{{ site }}{{ request.path }}">
+    <meta property="og:image" content="{{ site }}{{ url_for('static', filename='images/og-image.jpg') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SK AC Repair Services logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ self.title() }}">
+    <meta name="twitter:description" content="{{ self.description() }}">
+    <meta name="twitter:image" content="{{ site }}{{ url_for('static', filename='images/og-image.jpg') }}">
+    <link rel="canonical" href="{{ site }}{{ request.path }}">
+    <link rel="alternate" hreflang="en-IN" href="{{ site }}{{ request.path }}">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "{{ site }}/#website",
+          "url": "{{ site }}/",
+          "name": "SK AC Repair Services",
+          "inLanguage": "en-IN",
+          "publisher": {"@id": "{{ site }}/#business"}
+        },
+        {
+          "@type": "HVACBusiness",
+          "@id": "{{ site }}/#business",
+          "name": "SK AC Repair Services",
+          "url": "{{ site }}/",
+          "logo": "{{ site }}{{ url_for('static', filename='images/logo.png') }}",
+          "image": "{{ site }}{{ url_for('static', filename='images/og-image.jpg') }}",
+          "description": "AC installation, repair and gas charging, fridge, washing machine and geyser repair, copper pipe fitting and old AC buying in Chandigarh and Mohali.",
+          "telephone": ["+91-7456884850", "+91-8923202164"],
+          "email": "skacrepairservice@gmail.com",
+          "hasMap": "https://maps.app.goo.gl/ckQh8qe3LMhciW176",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jujhar Nagar, 39 West Society, Near Indian Bank of India",
+            "addressLocality": "Chandigarh",
+            "addressRegion": "Chandigarh",
+            "addressCountry": "IN"
+          },
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "08:00",
+            "closes": "21:00"
+          }],
+          "areaServed": ["Chandigarh", "Mohali", "Kharar", "Zirakpur", "Panchkula"],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AC Installation, Repair & Gas Charging"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Copper Pipe Fitting"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Washing Machine Repair"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fridge Repair & Gas Charging"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Geyser Installation & Repair"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Old AC Buying"}}
+            ]
+          },
+          "sameAs": [
+            "https://www.instagram.com/skacrepairservice",
+            "https://www.facebook.com/share/18gVt1EW87/",
+            "https://maps.app.goo.gl/ckQh8qe3LMhciW176"
+          ]
+        }
+      ]
+    }
+    </script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon/favicon-32x32.png') }}">

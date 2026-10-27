@@ -1,5 +1,24 @@
 {% extends "base.html" %}
 
+{% block extra_head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How quickly can a technician reach me?", "acceptedAnswer": {"@type": "Answer", "text": "Our technicians reach Jujhar Nagar, Sector 39 West, Mohali and nearby Chandigarh sectors within 1–2 hours of booking. Same-day service is available across Tricity."}},
+    {"@type": "Question", "name": "Do you buy old or non-working ACs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! We buy old, used, and non-working Split and Window ACs at the best market price with instant cash/UPI payment and free doorstep uninstallation & pickup."}},
+    {"@type": "Question", "name": "Do you provide underground copper pipe fitting for new homes?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We specialize in concealed (underground) and open heavy-gauge copper pipe fitting with proper thermal insulation, drain piping, control cabling and leak testing for houses, builder floors and commercial spaces."}},
+    {"@type": "Question", "name": "Do you do gas charging for both ACs and refrigerators?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we use 100% genuine refrigerants (R32, R410A, R22, R134a, R600a) for Split/Window ACs and single/double-door refrigerators, complete with leak fixing and vacuuming."}},
+    {"@type": "Question", "name": "What warranty do you provide on repairs?", "acceptedAnswer": {"@type": "Answer", "text": "All repairs and gas charging come with a service warranty. If the same issue recurs within the warranty period, we resolve it promptly at no extra labour charge."}},
+    {"@type": "Question", "name": "Do you service all AC, washing machine, fridge & geyser brands?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — our technicians handle Daikin, LG, Samsung, Voltas, Blue Star, Carrier, Hitachi, O General, Mitsubishi, Panasonic, Whirlpool, Godrej, Haier, IFB, Bosch, Bajaj, Havells and more."}},
+    {"@type": "Question", "name": "Are services available on Sundays and holidays?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! SK AC Repair Services operates 7 days a week (Monday to Sunday, 8:00 AM – 9:00 PM) including weekends and holidays so you never suffer in the heat."}},
+    {"@type": "Question", "name": "What payment methods do you accept?", "acceptedAnswer": {"@type": "Answer", "text": "We accept Cash, UPI (Google Pay, PhonePe, Paytm) and bank transfers. Payment is collected only after the work is completed to your satisfaction."}}
+  ]
+}
+</script>
+{% endblock %}
+
 {% block content %}
 
 <!-- HERO -->
@@ -309,12 +328,12 @@
         <div class="proc-body"><h3 class="h3">Technician Dispatched</h3><p class="body">An experienced technician is assigned and reaches you quickly anywhere in Chandigarh &amp; Mohali.</p></div>
       </div>
       <div class="proc-card rv">
-        <img loading="lazy" src="{{ url_for('static', filename='images/diagnosis.webp') }}" alt="Diagnosis" class="proc-img">
+        <img loading="lazy" src="{{ url_for('static', filename='images/diagnosis.webp') }}" alt="Technician diagnosing an AC fault" class="proc-img">
         <div class="proc-num">3</div>
         <div class="proc-body"><h3 class="h3">Diagnosis &amp; Transparent Quote</h3><p class="body">The technician inspects the unit and gives a clear, upfront quote before starting any repair work.</p></div>
       </div>
       <div class="proc-card rv">
-        <img loading="lazy" src="{{ url_for('static', filename='images/repair_done.webp') }}" alt="Repair done" class="proc-img">
+        <img loading="lazy" src="{{ url_for('static', filename='images/repair_done.webp') }}" alt="AC repair completed" class="proc-img">
         <div class="proc-num">4</div>
         <div class="proc-body"><h3 class="h3">Service Completed + Warranty</h3><p class="body">Work completed cleanly with genuine parts and backed by our reliable service warranty.</p></div>
       </div>
@@ -388,7 +407,7 @@
 
 <!-- AMC PLANS -->
 <section class="sec" id="amc">
-  <img loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&q=50&fit=crop" alt="background" class="amc-bg">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&q=50&fit=crop" alt="" class="amc-bg">
   <div class="amc-in">
     <div class="amc-hd rv">
       <div class="lbl">AMC Plans</div>
@@ -593,25 +612,25 @@
 
         <div class="c-details">
           <div class="cd">
-            <img class="cd-thumb" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=96&q=80&fit=crop" alt="phone">
+            <img class="cd-thumb" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=96&q=80&fit=crop" alt="">
             <div>
               <div class="cd-lbl">Phone / WhatsApp</div>
               <div class="cd-val"><a href="tel:+917456884850">+91 74568 84850</a> &nbsp;|&nbsp; <a href="tel:+918923202164">+91 89232 02164</a></div>
             </div>
           </div>
           <div class="cd">
-            <img class="cd-thumb" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=96&q=80&fit=crop" alt="email">
+            <img class="cd-thumb" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=96&q=80&fit=crop" alt="">
             <div><div class="cd-lbl">Email</div><div class="cd-val"><a href="mailto:skacrepairservice@gmail.com">skacrepairservice@gmail.com</a></div></div>
           </div>
           <div class="cd">
-            <img class="cd-thumb" src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=96&q=80&fit=crop" alt="address">
+            <img class="cd-thumb" src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=96&q=80&fit=crop" alt="">
             <div>
               <div class="cd-lbl">Office Address</div>
               <div class="cd-val"><a href="https://maps.app.goo.gl/ckQh8qe3LMhciW176" target="_blank" rel="noopener noreferrer">Jujhar Nagar, 39 West Society, Near Indian Bank of India, Chandigarh</a></div>
             </div>
           </div>
           <div class="cd">
-            <img class="cd-thumb" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=96&q=80&fit=crop" alt="hours">
+            <img class="cd-thumb" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=96&q=80&fit=crop" alt="">
             <div><div class="cd-lbl">Working Hours</div><div class="cd-val">Mon–Sun: 8:00 AM – 9:00 PM</div></div>
           </div>
         </div>
