@@ -6,6 +6,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {"@type": "Question", "name": "What is your doorstep visiting or inspection charge?", "acceptedAnswer": {"@type": "Answer", "text": "Our doorstep visit and inspection charge is ₹299. If you proceed with the repair service, this ₹299 fee is 100% adjusted/waived in your final repair bill!"}},
     {"@type": "Question", "name": "How quickly can a technician reach me?", "acceptedAnswer": {"@type": "Answer", "text": "Our technicians reach Jujhar Nagar, Sector 39 West, Mohali and nearby Chandigarh sectors within 1–2 hours of booking. Same-day service is available across Tricity."}},
     {"@type": "Question", "name": "Do you buy old or non-working ACs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! We buy old, used, and non-working Split and Window ACs at the best market price with instant cash/UPI payment and free doorstep uninstallation & pickup."}},
     {"@type": "Question", "name": "Do you provide underground copper pipe fitting for new homes?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We specialize in concealed (underground) and open heavy-gauge copper pipe fitting with proper thermal insulation, drain piping, control cabling and leak testing for houses, builder floors and commercial spaces."}},
@@ -29,6 +30,7 @@
     <div class="hero-tags">
       <div class="h-tag"><span class="material-symbols-outlined icon-inline">bolt</span> Same-Day Doorstep Service</div>
       <div class="h-tag"><span class="material-symbols-outlined icon-inline">ac_unit</span> Gas Charging, Copper Piping &amp; Old AC Buying</div>
+      <div class="h-tag h-tag-visit"><span class="material-symbols-outlined icon-inline" style="background:var(--sky2)">verified</span> Doorstep Inspection: <strong style="white-space:nowrap">₹299</strong> <span class="h-visit-sub">(Adjusted in final repair bill)</span></div>
     </div>
     <div class="hero-ctas">
       <a href="#contact" class="btn btn-sky">Book a Service</a>
@@ -56,43 +58,123 @@
   </div>
 </div>
 
-<!-- BRANDS -->
+<!-- BRANDS WE SERVICE -->
 <section id="brands">
   <div class="brands-in rv">
     <div class="lbl">Brands We Service</div>
-    <h2 class="h2" style="margin-top:8px">All major brands covered</h2>
-    <p class="body">Our certified technicians are trained on every leading AC and home appliance brand in India.</p>
+    <h2 class="h2" style="margin-top:8px">All Major Brands Covered</h2>
+    <p class="body">Our certified technicians provide repair, genuine gas charging, maintenance &amp; installation for every leading AC and appliance brand in India.</p>
+    
     <div class="brands-marquee" style="margin-top:28px">
-      <div class="brands-row brands-row-left" aria-label="Brands we service moving left to right">
+      <!-- ROW 1 (MOVING LEFT) -->
+      <div class="brands-row brands-row-left" aria-label="Leading air conditioning brands we service">
         <div class="brands-track">
-          <span class="brand-p brand-daikin">Daikin</span><span class="brand-p brand-lg">LG</span><span class="brand-p brand-samsung">Samsung</span>
-          <span class="brand-p brand-voltas">Voltas</span><span class="brand-p brand-blue-star">Blue Star</span><span class="brand-p brand-carrier">Carrier</span>
-          <span class="brand-p brand-hitachi">Hitachi</span><span class="brand-p brand-whirlpool">Whirlpool</span><span class="brand-p brand-godrej">Godrej</span>
-          <span class="brand-p brand-panasonic">Panasonic</span><span class="brand-p brand-haier">Haier</span><span class="brand-p brand-o-general">O General</span>
-          <span class="brand-p brand-mitsubishi">Mitsubishi</span><span class="brand-p brand-ifb">IFB</span><span class="brand-p brand-bosch">Bosch</span>
-          <span class="brand-p brand-videocon">Videocon</span>
-          <span class="brand-p brand-daikin">Daikin</span><span class="brand-p brand-lg">LG</span><span class="brand-p brand-samsung">Samsung</span>
-          <span class="brand-p brand-voltas">Voltas</span><span class="brand-p brand-blue-star">Blue Star</span><span class="brand-p brand-carrier">Carrier</span>
-          <span class="brand-p brand-hitachi">Hitachi</span><span class="brand-p brand-whirlpool">Whirlpool</span><span class="brand-p brand-godrej">Godrej</span>
-          <span class="brand-p brand-panasonic">Panasonic</span><span class="brand-p brand-haier">Haier</span><span class="brand-p brand-o-general">O General</span>
-          <span class="brand-p brand-mitsubishi">Mitsubishi</span><span class="brand-p brand-ifb">IFB</span><span class="brand-p brand-bosch">Bosch</span>
-          <span class="brand-p brand-videocon">Videocon</span>
+          <!-- SET 1 -->
+          <div class="brand-card" title="Daikin AC Repair &amp; Service">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/daikin.png') }}" alt="Daikin AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="LG AC &amp; Appliance Service">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/LG.png') }}" alt="LG AC &amp; Appliance Repair" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Samsung AC &amp; Refrigerator Repair">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/samsung.png') }}" alt="Samsung AC Repair" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Voltas AC Repair &amp; Gas Charging">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/voltas.png') }}" alt="Voltas AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Blue Star AC Repair &amp; Service">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/blue star.png') }}" alt="Blue Star AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Hitachi AC Repair &amp; Installation">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/hitachi.png') }}" alt="Hitachi AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Carrier AC Repair &amp; Maintenance">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/carrier.png') }}" alt="Carrier AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="O General AC Repair &amp; Service">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/o general.png') }}" alt="O General AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <!-- SET 1 REPEAT FOR INFINITE LOOP -->
+          <div class="brand-card" title="Daikin AC Repair &amp; Service" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/daikin.png') }}" alt="Daikin AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="LG AC &amp; Appliance Service" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/LG.png') }}" alt="LG AC &amp; Appliance Repair" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Samsung AC &amp; Refrigerator Repair" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/samsung.png') }}" alt="Samsung AC Repair" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Voltas AC Repair &amp; Gas Charging" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/voltas.png') }}" alt="Voltas AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Blue Star AC Repair &amp; Service" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/blue star.png') }}" alt="Blue Star AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Hitachi AC Repair &amp; Installation" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/hitachi.png') }}" alt="Hitachi AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Carrier AC Repair &amp; Maintenance" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/carrier.png') }}" alt="Carrier AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="O General AC Repair &amp; Service" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/o general.png') }}" alt="O General AC Service" class="brand-img" width="160" height="80">
+          </div>
         </div>
       </div>
-      <div class="brands-row brands-row-right" aria-label="Brands we service moving right to left">
+
+      <!-- ROW 2 (MOVING RIGHT) -->
+      <div class="brands-row brands-row-right" aria-label="Home appliance and cooling brands we service">
         <div class="brands-track">
-          <span class="brand-p brand-daikin">Daikin</span><span class="brand-p brand-lg">LG</span><span class="brand-p brand-samsung">Samsung</span>
-          <span class="brand-p brand-voltas">Voltas</span><span class="brand-p brand-blue-star">Blue Star</span><span class="brand-p brand-carrier">Carrier</span>
-          <span class="brand-p brand-hitachi">Hitachi</span><span class="brand-p brand-whirlpool">Whirlpool</span><span class="brand-p brand-godrej">Godrej</span>
-          <span class="brand-p brand-panasonic">Panasonic</span><span class="brand-p brand-haier">Haier</span><span class="brand-p brand-o-general">O General</span>
-          <span class="brand-p brand-mitsubishi">Mitsubishi</span><span class="brand-p brand-ifb">IFB</span><span class="brand-p brand-bosch">Bosch</span>
-          <span class="brand-p brand-videocon">Videocon</span>
-          <span class="brand-p brand-daikin">Daikin</span><span class="brand-p brand-lg">LG</span><span class="brand-p brand-samsung">Samsung</span>
-          <span class="brand-p brand-voltas">Voltas</span><span class="brand-p brand-blue-star">Blue Star</span><span class="brand-p brand-carrier">Carrier</span>
-          <span class="brand-p brand-hitachi">Hitachi</span><span class="brand-p brand-whirlpool">Whirlpool</span><span class="brand-p brand-godrej">Godrej</span>
-          <span class="brand-p brand-panasonic">Panasonic</span><span class="brand-p brand-haier">Haier</span><span class="brand-p brand-o-general">O General</span>
-          <span class="brand-p brand-mitsubishi">Mitsubishi</span><span class="brand-p brand-ifb">IFB</span><span class="brand-p brand-bosch">Bosch</span>
-          <span class="brand-p brand-videocon">Videocon</span>
+          <!-- SET 2 -->
+          <div class="brand-card" title="Mitsubishi Heavy AC Repair">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/mitsubishi.png') }}" alt="Mitsubishi AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Panasonic AC &amp; Appliance Service">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/panasonic.png') }}" alt="Panasonic AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Godrej AC &amp; Refrigerator Repair">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/godrej.png') }}" alt="Godrej AC &amp; Fridge Repair" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Whirlpool AC &amp; Washing Machine Repair">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/whirlpool.png') }}" alt="Whirlpool Repair Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Haier AC &amp; Appliance Service">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/Haier.png') }}" alt="Haier AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="IFB Washing Machine &amp; AC Repair">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/ifb.png') }}" alt="IFB Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Bosch Washing Machine &amp; Appliance Service">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/bosch.png') }}" alt="Bosch Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Videocon AC &amp; Fridge Service">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/videocon.png') }}" alt="Videocon Service" class="brand-img" width="160" height="80">
+          </div>
+          <!-- SET 2 REPEAT FOR INFINITE LOOP -->
+          <div class="brand-card" title="Mitsubishi Heavy AC Repair" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/mitsubishi.png') }}" alt="Mitsubishi AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Panasonic AC &amp; Appliance Service" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/panasonic.png') }}" alt="Panasonic AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Godrej AC &amp; Refrigerator Repair" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/godrej.png') }}" alt="Godrej AC &amp; Fridge Repair" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Whirlpool AC &amp; Washing Machine Repair" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/whirlpool.png') }}" alt="Whirlpool Repair Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Haier AC &amp; Appliance Service" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/Haier.png') }}" alt="Haier AC Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="IFB Washing Machine &amp; AC Repair" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/ifb.png') }}" alt="IFB Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Bosch Washing Machine &amp; Appliance Service" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/bosch.png') }}" alt="Bosch Service" class="brand-img" width="160" height="80">
+          </div>
+          <div class="brand-card" title="Videocon AC &amp; Fridge Service" aria-hidden="true">
+            <img loading="lazy" src="{{ url_for('static', filename='images/brands/videocon.png') }}" alt="Videocon Service" class="brand-img" width="160" height="80">
+          </div>
         </div>
       </div>
     </div>
@@ -125,6 +207,13 @@
             <li>PCB (circuit board) &amp; sensor repair</li>
             <li>Foam-jet deep servicing &amp; cleaning</li>
           </ul>
+          <div class="svc-price-row">
+            <div class="sp-amount-wrap">
+              <span class="sp-prefix">Starts At</span>
+              <span class="sp-amount">₹1,000</span>
+            </div>
+            <span class="sp-badge-tag"><span class="material-symbols-outlined">verified</span> Fixed &amp; Fair</span>
+          </div>
           <div class="svc-footer">
             <a href="javascript:void(0)" onclick="showModal('ac-split')" class="btn-svc-l">Learn More</a>
             <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn-svc-r">Book Now</a>
@@ -147,6 +236,13 @@
             <li>Leak-proof brazing &amp; nitrogen testing</li>
             <li>Drain pipe &amp; control wire laying</li>
           </ul>
+          <div class="svc-price-row">
+            <div class="sp-amount-wrap">
+              <span class="sp-prefix">Starts At</span>
+              <span class="sp-amount">₹1,000</span>
+            </div>
+            <span class="sp-badge-tag"><span class="material-symbols-outlined">verified</span> Fixed &amp; Fair</span>
+          </div>
           <div class="svc-footer">
             <a href="javascript:void(0)" onclick="showModal('copper-pipe')" class="btn-svc-l">Learn More</a>
             <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn-svc-r">Book Now</a>
@@ -169,6 +265,13 @@
             <li>PCB repair &amp; replacement</li>
             <li>Spin noise &amp; vibration fix</li>
           </ul>
+          <div class="svc-price-row">
+            <div class="sp-amount-wrap">
+              <span class="sp-prefix">Starts At</span>
+              <span class="sp-amount">₹1,000</span>
+            </div>
+            <span class="sp-badge-tag"><span class="material-symbols-outlined">verified</span> Fixed &amp; Fair</span>
+          </div>
           <div class="svc-footer">
             <a href="javascript:void(0)" onclick="showModal('washing-machine')" class="btn-svc-l">Learn More</a>
             <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn-svc-r">Book Now</a>
@@ -191,6 +294,13 @@
             <li>Thermostat &amp; relay replacement</li>
             <li>Ice buildup / defrost sensor fix</li>
           </ul>
+          <div class="svc-price-row">
+            <div class="sp-amount-wrap">
+              <span class="sp-prefix">Starts At</span>
+              <span class="sp-amount">₹1,000</span>
+            </div>
+            <span class="sp-badge-tag"><span class="material-symbols-outlined">verified</span> Fixed &amp; Fair</span>
+          </div>
           <div class="svc-footer">
             <a href="javascript:void(0)" onclick="showModal('refrigerator')" class="btn-svc-l">Learn More</a>
             <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn-svc-r">Book Now</a>
@@ -213,6 +323,13 @@
             <li>Tank leakage fixing &amp; valve setup</li>
             <li>Descaling &amp; safety maintenance</li>
           </ul>
+          <div class="svc-price-row">
+            <div class="sp-amount-wrap">
+              <span class="sp-prefix">Starts At</span>
+              <span class="sp-amount">₹1,000</span>
+            </div>
+            <span class="sp-badge-tag"><span class="material-symbols-outlined">verified</span> Fixed &amp; Fair</span>
+          </div>
           <div class="svc-footer">
             <a href="javascript:void(0)" onclick="showModal('geyser')" class="btn-svc-l">Learn More</a>
             <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn-svc-r">Book Now</a>
@@ -235,6 +352,13 @@
             <li>Same-day doorstep inspection &amp; pickup</li>
             <li>Single units &amp; bulk office AC buyback</li>
           </ul>
+          <div class="svc-price-row">
+            <div class="sp-amount-wrap">
+              <span class="sp-prefix">Starts At</span>
+              <span class="sp-amount">₹1,000</span>
+            </div>
+            <span class="sp-badge-tag"><span class="material-symbols-outlined">verified</span> Fixed &amp; Fair</span>
+          </div>
           <div class="svc-footer">
             <a href="javascript:void(0)" onclick="showModal('old-ac')" class="btn-svc-l">Learn More</a>
             <a href="https://wa.me/917456884850?text=Hi%20SK%20AC%20Repair%2C%20I%20want%20to%20sell%20my%20old%20AC." target="_blank" rel="noopener noreferrer" class="btn-svc-r">Sell Old AC</a>
@@ -258,6 +382,13 @@
             <li>Nitrogen pressure leak detection</li>
             <li>Full vacuuming for peak cooling</li>
           </ul>
+          <div class="svc-price-row">
+            <div class="sp-amount-wrap">
+              <span class="sp-prefix">Starts At</span>
+              <span class="sp-amount">₹1,000</span>
+            </div>
+            <span class="sp-badge-tag"><span class="material-symbols-outlined">verified</span> Fixed &amp; Fair</span>
+          </div>
           <div class="svc-footer">
             <a href="javascript:void(0)" onclick="showModal('gas-charging')" class="btn-svc-l">Learn More</a>
             <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn-svc-r">Book Now</a>
@@ -278,6 +409,13 @@
             <li>Drain pump &amp; coil cleaning</li>
             <li>Commercial office &amp; showroom AMC</li>
           </ul>
+          <div class="svc-price-row">
+            <div class="sp-amount-wrap">
+              <span class="sp-prefix">Starts At</span>
+              <span class="sp-amount">₹1,000</span>
+            </div>
+            <span class="sp-badge-tag"><span class="material-symbols-outlined">verified</span> Fixed &amp; Fair</span>
+          </div>
           <div class="svc-footer">
             <a href="javascript:void(0)" onclick="showModal('ac-cassette')" class="btn-svc-l">Learn More</a>
             <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn-svc-r">Book Now</a>
@@ -298,6 +436,13 @@
             <li>Drain line &amp; filter sanitization</li>
             <li>Ampere, gas pressure &amp; health check</li>
           </ul>
+          <div class="svc-price-row">
+            <div class="sp-amount-wrap">
+              <span class="sp-prefix">Starts At</span>
+              <span class="sp-amount">₹1,000</span>
+            </div>
+            <span class="sp-badge-tag"><span class="material-symbols-outlined">verified</span> Fixed &amp; Fair</span>
+          </div>
           <div class="svc-footer">
             <a href="javascript:void(0)" onclick="showModal('maintenance')" class="btn-svc-l">Learn More</a>
             <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn-svc-r">Book Now</a>
@@ -341,66 +486,462 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- TESTIMONIALS / CUSTOMER REVIEWS (CAROUSEL) -->
 <section class="sec" id="testimonials">
   <div class="sec-inner">
     <div class="testi-top rv">
       <div>
         <div class="lbl">Customer Reviews</div>
-        <h2 class="h2" style="margin-top:6px">What customers say about us</h2>
+        <h2 class="h2" style="margin-top:6px">Real Reviews from Real Customers</h2>
+        <p class="body" style="margin-top:6px">Rated <strong>5.0 ★★★★★</strong> across Chandigarh, Mohali &amp; Tricity by genuine homeowners.</p>
       </div>
       <div class="testi-pill">
-        <div class="tp-avs" style="display:none"></div>
-        <div><div class="tp-t">Trusted by Tricity Families</div><div class="tp-s">★★★★★ 4.9 / 5 on Google</div></div>
+        <div><div class="tp-t">5.0 Star Rated Experience</div><div class="tp-s">★★★★★ 29+ Verified Reviews</div></div>
       </div>
     </div>
-    <div class="testi-slider-wrapper">
-      <button class="testi-nav prev" onclick="scrollTestimonials(-1)" aria-label="Previous">
+
+    <!-- CATEGORY FILTER TABS -->
+    <div class="review-filter-bar">
+      <button class="rf-btn active" onclick="filterReviews('all', this)">All Reviews <span class="rf-count">29</span></button>
+      <button class="rf-btn" onclick="filterReviews('gas-charging', this)">Gas Charging <span class="rf-count">7</span></button>
+      <button class="rf-btn" onclick="filterReviews('ac-installation', this)">Installation &amp; Dismantle <span class="rf-count">5</span></button>
+      <button class="rf-btn" onclick="filterReviews('repair-pcb', this)">PCB &amp; Leakage Repair <span class="rf-count">6</span></button>
+      <button class="rf-btn" onclick="filterReviews('ac-service', this)">AC Service &amp; Wash <span class="rf-count">17</span></button>
+    </div>
+
+    <!-- CAROUSEL TRACK WITH CONTROLS -->
+    <div class="reviews-carousel-wrap">
+      <button class="rc-nav-btn prev" onclick="scrollReviewsCarousel(-1)" aria-label="Previous Reviews">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
       </button>
-      
-      <div class="testi-grid" id="testiGrid">
-        <div class="tc rv">
-          <div class="tc-qt">"</div>
-          <div class="tc-stars">★★★★★</div>
-          <p class="tc-txt">My split AC stopped cooling in peak summer. SK AC Repair Services sent a technician within an hour. Leak fixed and gas charging done neatly — cooling like a brand new AC!</p>
-          <div class="tc-auth"><div><div class="tc-n">Gurpreet Singh</div><div class="tc-l">Sector 39, Chandigarh</div></div></div>
+
+      <div class="reviews-track" id="reviewsTrack">
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">RD</div>
+            <div class="rc-meta">
+              <div class="rc-name">Robinson David <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">AC Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"It was good experience with Sk Ac rapair services."</p>
         </div>
-        <div class="tc rv">
-          <div class="tc-qt">"</div>
-          <div class="tc-stars">★★★★★</div>
-          <p class="tc-txt">Got underground copper pipe fitting done for 3 rooms in our new house in Jujhar Nagar. Heavy-gauge copper pipes, very neat insulation and honest rates. Highly recommended!</p>
-          <div class="tc-auth"><div><div class="tc-n">Amanpreet Kaur</div><div class="tc-l">Jujhar Nagar, Mohali</div></div></div>
+        <div class="rc-card" data-category="gas-charging ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">R</div>
+            <div class="rc-meta">
+              <div class="rc-name">Ritik 3006 <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Gas Charging & Install</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Gas charging done and excellent service and perfect indoor installation done sk ac repair service Chandigarh best service provider"</p>
         </div>
-        <div class="tc rv">
-          <div class="tc-qt">"</div>
-          <div class="tc-stars">★★★★★</div>
-          <p class="tc-txt">Sold two old window ACs and got a new split AC installed by SK AC Repair. They gave the best price for the old ACs and did the new installation cleanly on the same visit.</p>
-          <div class="tc-auth"><div><div class="tc-n">Rohit Sharma</div><div class="tc-l">Phase 7, Mohali</div></div></div>
+        <div class="rc-card" data-category="gas-charging ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">SJ</div>
+            <div class="rc-meta">
+              <div class="rc-name">Sharda Jha <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Gas charging lg ac Ac service good ser6sk ac repair service chandigarh best service done 👍"</p>
         </div>
-        <div class="tc rv">
-          <div class="tc-qt">"</div>
-          <div class="tc-stars">★★★★★</div>
-          <p class="tc-txt">Our washing machine drum was stuck and making noise. Their technician fixed the motor and bearing issue in under an hour at home. Transparent pricing and polite behaviour.</p>
-          <div class="tc-auth"><div><div class="tc-n">Pooja Verma</div><div class="tc-l">Sector 40, Chandigarh</div></div></div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">SK</div>
+            <div class="rc-meta">
+              <div class="rc-name">श्री कृष्ण <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Jet Pump Cleaning</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Cleaning of cooling filters, indoor coil washing, blower cleaning, outdoor condenser fin wash (pressure pump), and drain pipe clearing. When needed: Every season before regular use, or if airflow is low / foul odor is present. Sk ac repair service providers Best service"</p>
         </div>
-        <div class="tc rv">
-          <div class="tc-qt">"</div>
-          <div class="tc-stars">★★★★★</div>
-          <p class="tc-txt">Called at 9 AM for geyser installation and double-door fridge gas charging. Everything was completed by 11:30 AM with zero mess and genuine charges. Best technician team in Tricity!</p>
-          <div class="tc-auth"><div><div class="tc-n">Mandeep Gill</div><div class="tc-l">Sunny Enclave, Kharar</div></div></div>
+        <div class="rc-card" data-category="gas-charging ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">HR</div>
+            <div class="rc-meta">
+              <div class="rc-name">Hemant rathore <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Gas Charging & Geyser</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Lg Ac gas charging and installation And geyser installation also good service Sk Ac repair service excellent job person also good 👍"</p>
         </div>
-        <div class="tc rv">
-          <div class="tc-qt">"</div>
-          <div class="tc-stars">★★★★★</div>
-          <p class="tc-txt">Quick response and honest diagnosis! They repaired my Samsung refrigerator cooling problem without unnecessary part replacements. Saved us a lot of money.</p>
-          <div class="tc-auth"><div><div class="tc-n">Vikas Bansal</div><div class="tc-l">Sector 22, Chandigarh</div></div></div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">SS</div>
+            <div class="rc-meta">
+              <div class="rc-name">Surendra Singh <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">AC Dismantling</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Three Ac Dismantle excellent service Sk ac repair service service provider best service chandigarh try city"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">MF</div>
+            <div class="rc-meta">
+              <div class="rc-name">Mithun ff <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Foam Wash Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Ac service form service good service affordable price excellent job 👍🏻 sk ac Repair Service"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">IS</div>
+            <div class="rc-meta">
+              <div class="rc-name">Isha <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Doorstep AC Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"ac service ke liye bulaye The hamne Bahoot hi achchi service kiye h sk ac repair service providers best service Chandigarh 👍"</p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">AK</div>
+            <div class="rc-meta">
+              <div class="rc-name">arjun kumar <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Wiring & Electrical</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Ac not working wiring Loos connect good service sk ac repair service provider best done ✅"</p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">NC</div>
+            <div class="rc-meta">
+              <div class="rc-name">Neha Chawla <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Water Leakage Fix</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Ac service water leakage"</p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">JB</div>
+            <div class="rc-meta">
+              <div class="rc-name">Joban Boparai <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Ac installation good experience person good 👍 iam very sk ac repair service try city 😀 …"</p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">AT</div>
+            <div class="rc-meta">
+              <div class="rc-name">Asha Thakur 025 <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Gas charging done affordable price good person"</p>
+        </div>
+        <div class="rc-card" data-category="gas-charging ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">DN</div>
+            <div class="rc-meta">
+              <div class="rc-name">Deep Nav <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Gas Charging & Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Gas charging and service also good service so ac repair service providers best service try city Chandigarh nice person satisfied 😊 …"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">KS</div>
+            <div class="rc-meta">
+              <div class="rc-name">Komal Singh <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Professional Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Punctual, professional, and reliable AC service. The technician arrived on time and completed the job efficiently. Highly recommended!"</p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">JS</div>
+            <div class="rc-meta">
+              <div class="rc-name">jagvinder singh ranga <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">PCB Board Repair</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Pcb repair Good service affordable pric3 nice person sk ac repair service best service chandigarh"</p>
+        </div>
+        <div class="rc-card" data-category="gas-charging ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">BS</div>
+            <div class="rc-meta">
+              <div class="rc-name">balbir singh <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Service gas charging also good Service affordable price sk ac repair service best service chandigarh"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">MK</div>
+            <div class="rc-meta">
+              <div class="rc-name">munna kumar <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Reliable Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Veri good service sk ac repair service"</p>
+        </div>
+        <div class="rc-card" data-category="gas-charging ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">KB</div>
+            <div class="rc-meta">
+              <div class="rc-name">Komal Bajwa <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Sk AC repair service best ac service good person gas charging done"</p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">JB</div>
+            <div class="rc-meta">
+              <div class="rc-name">Jashan Bajwa <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Water Leakage Fix</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Sk ac repair service good service water leakage problem solve good service"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">RK</div>
+            <div class="rc-meta">
+              <div class="rc-name">Rinku <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">2 AC Servicing</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Tow ac service good service affordable price genuine price 👍 good service service sk ac repair Service providers …"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">LD</div>
+            <div class="rc-meta">
+              <div class="rc-name">Lakshya Datta <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Quality Work</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Nice work by SK AC Repair"</p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">DS</div>
+            <div class="rc-meta">
+              <div class="rc-name">Deepika Singh <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">PCB Board Repair</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Ac pcb repair problem solve jenuine price good service sk ac repair service providers"</p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">AS</div>
+            <div class="rc-meta">
+              <div class="rc-name">ashok sharma <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Leakage & Insulation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"water leakage problem solve insulation taping good"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">AS</div>
+            <div class="rc-meta">
+              <div class="rc-name">Anita Sharma <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Doorstep Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Good service bhot hi acha kaam kiye sk ac repair service providers"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">NB</div>
+            <div class="rc-meta">
+              <div class="rc-name">narain balian <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Polite Technician</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Good experience,good nature of the technician"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">NG</div>
+            <div class="rc-meta">
+              <div class="rc-name">Naveen Gupta <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">AC Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Good service 👍 …"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">RS</div>
+            <div class="rc-meta">
+              <div class="rc-name">Ranjit Singh <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Great Behaviour</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Bhot Hi Axha kaam krte h Sk ac Repair service wale iam very happy good behaviour person done 👍🏻 …"</p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">BK</div>
+            <div class="rc-meta">
+              <div class="rc-name">bhavuk kohli <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Good installation"</p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">AB</div>
+            <div class="rc-meta">
+              <div class="rc-name">Aishma Baru <span class="material-symbols-outlined rc-v-icon" title="Verified Customer">verified</span></div>
+            </div>
+            <div class="rc-tag">Fast Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">"Bhot axha kaam karte h sk ac repair service wale good service"</p>
         </div>
       </div>
-      
-      <button class="testi-nav next" onclick="scrollTestimonials(1)" aria-label="Next">
+
+      <button class="rc-nav-btn next" onclick="scrollReviewsCarousel(1)" aria-label="Next Reviews">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </button>
+    </div>
+
+    <!-- CAROUSEL FOOTER CONTROLS / SWIPE HINT -->
+    <div class="rc-carousel-footer">
+      <div class="rc-swipe-hint">
+        <span class="material-symbols-outlined">swipe</span> Swipe or click arrows to explore all 29 reviews
+      </div>
+      <div class="rc-carousel-actions">
+        <button class="rc-btn-circle" onclick="scrollReviewsCarousel(-1)" aria-label="Previous">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="rc-btn-circle" onclick="scrollReviewsCarousel(1)" aria-label="Next">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -478,7 +1019,7 @@
       <div class="rv-r">
         <div class="lbl">Service Coverage</div>
         <h2 class="h2" style="margin:8px 0 12px">We serve Chandigarh &amp; Mohali</h2>
-        <p class="body">Based at Jujhar Nagar, 39 West Society (Near Indian Bank of India), SK AC Repair Services provides fast doorstep service across Chandigarh, Mohali, Kharar &amp; Zirakpur.</p>
+        <p class="body">Based at Jujhar Nagar, 39 West Society (Near Indian Bank of India), Chandigarh - 160055, SK AC Repair Services provides fast doorstep service across Chandigarh, Mohali, Kharar &amp; Zirakpur.</p>
         <div class="areas-grid">
           <div class="area-chip"><span class="area-dot"></span>Jujhar Nagar / 39 West</div>
           <div class="area-chip"><span class="area-dot"></span>Sector 38 &amp; 39, Chd</div>
@@ -626,7 +1167,7 @@
             <img class="cd-thumb" src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=96&q=80&fit=crop" alt="">
             <div>
               <div class="cd-lbl">Office Address</div>
-              <div class="cd-val"><a href="https://maps.app.goo.gl/ckQh8qe3LMhciW176" target="_blank" rel="noopener noreferrer">Jujhar Nagar, 39 West Society, Near Indian Bank of India, Chandigarh</a></div>
+              <div class="cd-val"><a href="https://maps.app.goo.gl/ckQh8qe3LMhciW176" target="_blank" rel="noopener noreferrer">Jujhar Nagar, 39 West Society, Near Indian Bank of India, Chandigarh - 160055</a></div>
             </div>
           </div>
           <div class="cd">
@@ -650,6 +1191,16 @@
       <div class="rv-r">
         <div class="cf-box">
           <div class="cf-title">Book a Service</div>
+          <div class="visit-banner-card">
+            <div class="vbc-price-box">
+              <div class="vbc-amount"><span>₹</span>299</div>
+              <div class="vbc-lbl">Visiting Fee</div>
+            </div>
+            <div class="vbc-text">
+              <div class="vbc-heading"><span class="material-symbols-outlined">verified</span> Transparent Doorstep Inspection</div>
+              <div class="vbc-desc">Full diagnosis by certified technician. <strong>100% adjusted / waived</strong> in your total bill if repair service is taken!</div>
+            </div>
+          </div>
           <div class="form-row">
             <div class="fg"><label>Your Name</label><input type="text" id="cName" placeholder="e.g. Gurpreet Singh"></div>
             <div class="fg"><label>Phone Number</label><input type="tel" id="cPhone" placeholder="+91 98XXXXXXXX"></div>
@@ -707,6 +1258,16 @@
     <button class="modal-close" onclick="closeContactModal()" style="z-index:10; background:var(--frost);">×</button>
     <div class="cf-box" style="box-shadow:none; border:none; margin:0;">
       <div class="cf-title" style="margin-right:20px;">Book a Service</div>
+      <div class="visit-banner-card" style="margin:12px 0 18px;">
+        <div class="vbc-price-box">
+          <div class="vbc-amount"><span>₹</span>299</div>
+          <div class="vbc-lbl">Visiting Fee</div>
+        </div>
+        <div class="vbc-text">
+          <div class="vbc-heading"><span class="material-symbols-outlined">verified</span> Doorstep Inspection</div>
+          <div class="vbc-desc"><strong>₹299 only</strong> — fully adjusted against repair bill if service is availed!</div>
+        </div>
+      </div>
       <div class="form-row">
         <div class="fg"><label>Your Name</label><input type="text" id="pName" placeholder="e.g. Gurpreet Singh"></div>
         <div class="fg"><label>Phone Number</label><input type="tel" id="pPhone" placeholder="+91 98XXXXXXXX"></div>

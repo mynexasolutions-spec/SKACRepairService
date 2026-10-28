@@ -28,6 +28,17 @@ def guide():
     return render_template('guide.html')
 
 
+@app.route('/privacy-policy')
+def privacy_policy():
+    return render_template('privacy-policy.html')
+
+
+@app.route('/terms-and-conditions')
+@app.route('/terms')
+def terms():
+    return render_template('terms-and-conditions.html')
+
+
 @app.route('/robots.txt')
 def robots():
     content = (
@@ -47,6 +58,8 @@ def sitemap():
   <url><loc>https://skacrepairservice.in/about</loc><priority>0.8</priority></url>
   <url><loc>https://skacrepairservice.in/contact</loc><priority>0.9</priority></url>
   <url><loc>https://skacrepairservice.in/guide</loc><priority>0.7</priority></url>
+  <url><loc>https://skacrepairservice.in/privacy-policy</loc><priority>0.5</priority></url>
+  <url><loc>https://skacrepairservice.in/terms-and-conditions</loc><priority>0.5</priority></url>
 </urlset>"""
     return Response(xml, mimetype='application/xml')
 

@@ -233,3 +233,40 @@ function submitPopupToWhatsapp() {
     
     window.location.href = waUrl;
 }
+
+
+// REVIEWS CATEGORY FILTERING & CAROUSEL
+let currentReviewCategory = 'all';
+
+function filterReviews(category, btn) {
+    currentReviewCategory = category;
+    
+    document.querySelectorAll('.rf-btn').forEach(b => b.classList.remove('active'));
+    if(btn) btn.classList.add('active');
+    
+    const track = document.getElementById('reviewsTrack');
+    const cards = document.querySelectorAll('.rc-card');
+    if(!cards.length) return;
+    
+    cards.forEach(card => {
+        const cats = (card.getAttribute('data-category') || '').split(' ');
+        const matches = currentReviewCategory === 'all' || cats.includes(currentReviewCategory);
+        if (matches) {
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+    
+    if (track) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+    }
+}
+
+function scrollReviewsCarousel(dir) {
+    const track = document.getElementById('reviewsTrack');
+    if (!track) return;
+    const card = track.querySelector('.rc-card:not(.hidden)');
+    const cardWidth = card ? card.offsetWidth + 20 : 320;
+    track.scrollBy({ left: cardWidth * dir, behavior: 'smooth' });
+}
