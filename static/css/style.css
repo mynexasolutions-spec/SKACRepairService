@@ -4460,6 +4460,9 @@ footer {
     align-items: flex-start;
     gap: 12px;
   }
+  .svb-content {
+    flex: 0 0 auto;
+  }
   .svb-inner .btn {
     width: 100%;
     justify-content: center;
