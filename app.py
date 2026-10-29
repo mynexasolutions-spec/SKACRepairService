@@ -36,7 +36,7 @@ def privacy_policy():
 @app.route('/terms-and-conditions')
 @app.route('/terms')
 def terms():
-    return render_template('terms.html')
+    return render_template('terms-and-conditions.html')
 
 
 @app.route('/robots.txt')

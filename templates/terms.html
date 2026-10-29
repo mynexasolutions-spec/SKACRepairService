@@ -2,188 +2,344 @@
 
 {% block title %}Terms &amp; Conditions – SK AC Repair Services | Chandigarh &amp; Mohali{% endblock %}
 
+{% block description %}Read the Terms &amp; Conditions of SK AC Repair Services. Clear guidelines on doorstep AC repair, appliance servicing, upfront estimates, warranties, and payment terms in Chandigarh &amp; Mohali.{% endblock %}
+
 {% block content %}
 
 <!-- BANNER -->
-<section class="about-banner" style="height:360px">
-  <img src="{{ url_for('static', filename='images/ac_repair_2.jpg') }}" alt="SK AC Repair Services Terms &amp; Conditions" class="ab-bg" fetchpriority="high">
-  <div style="position:relative; z-index:2">
-    <div class="lbl" style="color:var(--frost); margin-bottom:10px">Legal &amp; Service Policy</div>
-    <h1 class="ab-ttl" style="font-size:clamp(2.4rem,5vw,3.6rem)">Terms &amp; Conditions</h1>
-    <p style="color:rgba(255,255,255,0.85); font-size:0.95rem; margin-top:8px">Last updated: October 2026 • Effective for all bookings via skacrepairservice.in</p>
+<section class="policy-banner">
+  <div class="policy-banner-inner">
+    <div class="policy-breadcrumb">
+      <a href="/">Home</a>
+      <span class="sep">/</span>
+      <span>Terms &amp; Conditions</span>
+    </div>
+    <div class="lbl" style="color:var(--frost); margin-bottom:12px; letter-spacing:0.1em">Service Agreement &amp; Clarity</div>
+    <h1>Terms &amp; Conditions</h1>
+    <p>Please review these Terms &amp; Conditions carefully before booking a service with <strong>SK AC Repair Services</strong>. We believe in complete honesty, transparent upfront quotes, and quality workmanship for every home across Chandigarh &amp; Mohali.</p>
+    <div class="policy-meta-bar">
+      <div class="policy-pill">
+        <span class="material-symbols-outlined" style="font-size:1.1rem">event</span>
+        Effective Date: October 2026
+      </div>
+      <div class="policy-pill">
+        <span class="material-symbols-outlined" style="font-size:1.1rem">gavel</span>
+        Binding Service Agreement
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- TERMS CONTENT -->
-<section class="sec" style="background:#fff; padding:60px 6%">
-  <div class="sec-inner" style="max-width:960px">
-    
-    <div class="terms-intro-box" style="background:var(--warm); border:1px solid var(--border); border-radius:20px; padding:28px 32px; margin-bottom:44px">
-      <h3 class="h3" style="margin-bottom:12px; font-size:1.3rem">Welcome to SK AC Repair Services</h3>
-      <p class="body" style="font-size:0.95rem; line-height:1.75">
-        These Terms &amp; Conditions govern the use of our website (<a href="https://skacrepairservice.in" style="color:var(--sky); font-weight:700">skacrepairservice.in</a>) and all doorstep repair, installation, maintenance, gas charging, copper piping, and appliance buyback services provided by <strong>SK AC Repair Services</strong> across Jujhar Nagar, Sector 39 West Society, Chandigarh, Mohali, and the wider Tricity region.
-      </p>
-      <p class="body" style="font-size:0.95rem; line-height:1.75; margin-top:10px">
-        By requesting or booking a service through our website, phone (+91 7456884850 / +91 8923202164), or WhatsApp, you agree to comply with and be bound by the terms detailed below.
-      </p>
-    </div>
+<!-- MAIN CONTENT WRAPPER -->
+<section class="policy-wrap">
+  <div class="policy-container">
 
-    <div class="terms-card" style="margin-bottom:36px; padding-bottom:32px; border-bottom:1px solid var(--border)">
-      <h3 class="h3" style="display:flex; align-items:center; gap:12px; font-size:1.4rem; margin-bottom:14px">
-        <span style="width:36px; height:36px; border-radius:10px; background:var(--frost); color:var(--sky); display:inline-flex; align-items:center; justify-content:center; font-size:1rem; font-weight:800">1</span>
-        Scope of Services
-      </h3>
-      <p class="body" style="margin-bottom:12px">SK AC Repair Services provides verified doorstep technical services for:</p>
-      <ul class="srv-points" style="grid-template-columns:1fr 1fr; margin-bottom:16px">
-        <li>Split &amp; Window AC Installation &amp; Uninstallation</li>
-        <li>AC Breakdown Diagnosis, PCB &amp; Motor Repair</li>
-        <li>100% Genuine Refrigerant Gas Charging (R32 / R410A / R22)</li>
-        <li>Concealed &amp; Open Heavy-Gauge Copper Pipe Fitting</li>
-        <li>Foam-Jet Deep Wash &amp; Seasonal AC Maintenance</li>
-        <li>Washing Machine Repair (Top &amp; Front Load)</li>
-        <li>Refrigerator Repair &amp; Gas Refill (R134a / R600a)</li>
-        <li>Geyser &amp; Water Heater Installation &amp; Element Repair</li>
-        <li>Old / Used AC Buying &amp; Scrap Buyback (Instant Payment)</li>
-        <li>Annual Maintenance Contracts (AMC) for Homes &amp; Offices</li>
-      </ul>
-    </div>
-
-    <div class="terms-card" style="margin-bottom:36px; padding-bottom:32px; border-bottom:1px solid var(--border)">
-      <h3 class="h3" style="display:flex; align-items:center; gap:12px; font-size:1.4rem; margin-bottom:14px">
-        <span style="width:36px; height:36px; border-radius:10px; background:var(--frost); color:var(--sky); display:inline-flex; align-items:center; justify-content:center; font-size:1rem; font-weight:800">2</span>
-        Transparent Pricing &amp; Inspection Charges
-      </h3>
-      <p class="body" style="margin-bottom:12px">
-        We believe in 100% fair and transparent pricing without hidden surprises:
-      </p>
-      <ul style="list-style:disc; margin-left:24px; color:var(--muted); font-size:0.95rem; line-height:1.8">
-        <li><strong>Visiting / Inspection Fee:</strong> A nominal inspection fee (₹199 – ₹299 depending on location) is applicable for doorstep diagnosis. If you proceed with the repair or installation, this visiting fee is <strong>fully adjusted or waived</strong> from the final bill.</li>
-        <li><strong>Upfront Quotation:</strong> After physical diagnosis, our technician will provide an itemized quote detailing labor, spare parts (if any), and refrigerant costs before any work begins. Work is carried out only after your explicit verbal or written approval.</li>
-        <li><strong>No Hidden Charges:</strong> All prices for standard services (such as installation, servicing, and copper piping per foot) follow our published rate card. Additional materials (e.g. extra copper pipe beyond standard, outdoor mounting brackets, electrical switches) will be quoted upfront.</li>
-        <li><strong>Payment Terms:</strong> Payments are due immediately upon satisfactory completion of service. We accept Cash, UPI (Google Pay, PhonePe, Paytm), and direct bank transfers.</li>
-      </ul>
-    </div>
-
-    <div class="terms-card" style="margin-bottom:36px; padding-bottom:32px; border-bottom:1px solid var(--border)">
-      <h3 class="h3" style="display:flex; align-items:center; gap:12px; font-size:1.4rem; margin-bottom:14px">
-        <span style="width:36px; height:36px; border-radius:10px; background:var(--frost); color:var(--sky); display:inline-flex; align-items:center; justify-content:center; font-size:1rem; font-weight:800">3</span>
-        90-Day Service Warranty &amp; Guarantee
-      </h3>
-      <div style="background:linear-gradient(135deg, rgba(32,0,69,0.04) 0%, rgba(0,182,122,0.06) 100%); border-left:4px solid var(--sky); padding:16px 20px; border-radius:8px; margin-bottom:16px">
-        <strong style="color:var(--navy); font-size:1rem">Comprehensive 90-Day Workmanship Warranty</strong>
-        <p class="body" style="margin-top:6px; font-size:0.92rem">All repairs, part replacements, and gas charging jobs performed by SK AC Repair Services carry a 90-day service warranty against recurring defects.</p>
+    <!-- 4 SUMMARY CARDS -->
+    <div class="policy-highlights">
+      <div class="p-hl-card">
+        <div class="p-hl-icon">
+          <span class="material-symbols-outlined">payments</span>
+        </div>
+        <div class="p-hl-title">Upfront Pricing</div>
+        <div class="p-hl-desc">Our technicians diagnose the issue and share clear quotes before opening parts or starting repairs. Zero hidden costs.</div>
       </div>
-      <ul style="list-style:disc; margin-left:24px; color:var(--muted); font-size:0.95rem; line-height:1.8">
-        <li>If the exact same issue recurs within 90 days from the service date, our technician will inspect and rectify it with <strong>zero labor charge</strong>.</li>
-        <li>Replaced components carry the standard manufacturer / supplier warranty.</li>
-        <li><strong>Warranty Exceptions:</strong> The warranty is void if:
-          <ul style="list-style:circle; margin-left:20px; margin-top:6px">
-            <li>The appliance has been opened, repaired, or tampered with by any third party or non-authorized person after our service.</li>
-            <li>Failure is caused by external electrical issues such as high voltage surge, lightning, burnt main wiring, or faulty phase neutral connections.</li>
-            <li>Damage is caused by accidental physical drop, flooding, rodent/pest infestation, or foreign object ingestion.</li>
+
+      <div class="p-hl-card">
+        <div class="p-hl-icon">
+          <span class="material-symbols-outlined">verified</span>
+        </div>
+        <div class="p-hl-title">Service Warranty</div>
+        <div class="p-hl-desc">Repairs, genuine spare part replacements, and refrigerant refills come with an explicit service warranty period.</div>
+      </div>
+
+      <div class="p-hl-card">
+        <div class="p-hl-icon">
+          <span class="material-symbols-outlined">thumb_up</span>
+        </div>
+        <div class="p-hl-title">Pay On Satisfaction</div>
+        <div class="p-hl-desc">Payment via Cash or UPI (GPay, PhonePe, Paytm) is collected only after the repair is completed and tested in front of you.</div>
+      </div>
+
+      <div class="p-hl-card">
+        <div class="p-hl-icon">
+          <span class="material-symbols-outlined">schedule</span>
+        </div>
+        <div class="p-hl-title">Same-Day Doorstep</div>
+        <div class="p-hl-desc">Technicians arrive quickly from our Sector 39 West / Jujhar Nagar hub across Chandigarh, Mohali, and Tricity.</div>
+      </div>
+    </div>
+
+    <!-- TWO COLUMN LAYOUT -->
+    <div class="policy-layout">
+
+      <!-- STICKY SIDEBAR -->
+      <aside class="policy-sidebar">
+        <div class="policy-sidebar-title">
+          <span class="material-symbols-outlined" style="font-size:1.15rem; color:var(--sky)">menu_book</span>
+          Quick Navigation
+        </div>
+        <ul class="policy-nav-list">
+          <li><a href="#terms-scope"><span class="num">01</span> Scope &amp; Agreement</a></li>
+          <li><a href="#terms-inspection"><span class="num">02</span> Inspection &amp; Visiting</a></li>
+          <li><a href="#terms-quotes"><span class="num">03</span> Quotes &amp; Payments</a></li>
+          <li><a href="#terms-warranty"><span class="num">04</span> Service Warranty</a></li>
+          <li><a href="#terms-access"><span class="num">05</span> Site Access &amp; Safety</a></li>
+          <li><a href="#terms-cancel"><span class="num">06</span> Cancellation Policy</a></li>
+          <li><a href="#terms-old-ac"><span class="num">07</span> Old AC Buying Terms</a></li>
+          <li><a href="#terms-legal"><span class="num">08</span> Liability &amp; Law</a></li>
+        </ul>
+
+        <div class="policy-side-card">
+          <h5>Need an Instant Quote?</h5>
+          <p>Call our helpdesk directly or message us on WhatsApp for rapid technician dispatch.</p>
+          <a href="tel:+917456884850" class="btn btn-navy" style="font-size:0.8rem; padding:8px 14px">
+            <span class="material-symbols-outlined" style="font-size:1rem">call</span> Call +91 7456884850
+          </a>
+        </div>
+      </aside>
+
+      <!-- TERMS CONTENT -->
+      <div class="policy-content">
+
+        <!-- 1. SCOPE & AGREEMENT -->
+        <article class="policy-card" id="terms-scope">
+          <div class="policy-card-head">
+            <span class="policy-card-num">1</span>
+            <div>
+              <h2>Acceptance of Terms &amp; Scope of Services</h2>
+              <span class="small">Ground rules for requesting repairs</span>
+            </div>
+          </div>
+          <p>By scheduling a doorstep service appointment through our website (<a href="https://skacrepairservice.in" style="color:var(--sky); font-weight:700">skacrepairservice.in</a>), phone call, or WhatsApp, you agree to comply with and be bound by these Terms &amp; Conditions.</p>
+          <p><strong>SK AC Repair Services</strong> delivers professional installation, servicing, preventive maintenance, and repair services for:</p>
+          <ul class="policy-list">
+            <li><span class="material-symbols-outlined bullet-icon">check_circle</span><span>Split &amp; Window Air Conditioners (all tonnage and inverter / non-inverter brands)</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">check_circle</span><span>Refrigerant gas charging (R32, R410A, R22, R134a, R600a) with leak testing and vacuuming</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">check_circle</span><span>Concealed and open copper pipe fitting with heavy-gauge tubing and insulation</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">check_circle</span><span>Single-door, double-door, and frost-free refrigerator repair</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">check_circle</span><span>Fully automatic (top-load &amp; front-load) and semi-automatic washing machine repair</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">check_circle</span><span>Storage and instant geyser installation, element replacement, and thermostat servicing</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">check_circle</span><span>Purchasing of old, scrap, or functioning AC units at transparent market valuations</span></li>
           </ul>
-        </li>
-      </ul>
-    </div>
+        </article>
 
-    <div class="terms-card" style="margin-bottom:36px; padding-bottom:32px; border-bottom:1px solid var(--border)">
-      <h3 class="h3" style="display:flex; align-items:center; gap:12px; font-size:1.4rem; margin-bottom:14px">
-        <span style="width:36px; height:36px; border-radius:10px; background:var(--frost); color:var(--sky); display:inline-flex; align-items:center; justify-content:center; font-size:1rem; font-weight:800">4</span>
-        Copper Pipe Fitting &amp; Installation Policy
-      </h3>
-      <ul style="list-style:disc; margin-left:24px; color:var(--muted); font-size:0.95rem; line-height:1.8">
-        <li>We use 100% pure heavy-gauge copper pipes with nitrile rubber thermal insulation and fire-retardant tape.</li>
-        <li>For concealed (underground / inside wall) piping in new constructions, nitrogen pressure testing is performed to ensure 100% leak-proof joints before plastering.</li>
-        <li>Civil wall-chasing (grooving) and pipe securing are done with utmost care; however, final wall plastering, putty, and paint finishing remain the property owner's or builder's responsibility unless explicitly contracted.</li>
-        <li>Standard installation packages include mounting of indoor and outdoor units with standard accessories. Any civil core cutting on reinforced concrete beams or specialized scaffolding for high-rise buildings will be pre-agreed with the client.</li>
-      </ul>
-    </div>
-
-    <div class="terms-card" style="margin-bottom:36px; padding-bottom:32px; border-bottom:1px solid var(--border)">
-      <h3 class="h3" style="display:flex; align-items:center; gap:12px; font-size:1.4rem; margin-bottom:14px">
-        <span style="width:36px; height:36px; border-radius:10px; background:var(--frost); color:var(--sky); display:inline-flex; align-items:center; justify-content:center; font-size:1rem; font-weight:800">5</span>
-        Old AC Buying (Used / Scrap Buyback) Terms
-      </h3>
-      <ul style="list-style:disc; margin-left:24px; color:var(--muted); font-size:0.95rem; line-height:1.8">
-        <li><strong>Valuation:</strong> Valuation of old Split, Window, or Commercial AC units is determined based on physical condition, tonnage, brand, compressor health, and scrap/copper market value.</li>
-        <li><strong>Free Doorstep Pickup &amp; Safe Uninstallation:</strong> Once the price is agreed upon, our technicians safely pump down any remaining refrigerant (if operational) and uninstall the units free of charge.</li>
-        <li><strong>Instant Payment:</strong> Full payment is made immediately via Cash or UPI before the appliance leaves your premises.</li>
-        <li><strong>Ownership Declaration:</strong> By selling an appliance, the customer confirms that they are the legal owner of the equipment and have full authority to sell it.</li>
-      </ul>
-    </div>
-
-    <div class="terms-card" style="margin-bottom:36px; padding-bottom:32px; border-bottom:1px solid var(--border)">
-      <h3 class="h3" style="display:flex; align-items:center; gap:12px; font-size:1.4rem; margin-bottom:14px">
-        <span style="width:36px; height:36px; border-radius:10px; background:var(--frost); color:var(--sky); display:inline-flex; align-items:center; justify-content:center; font-size:1rem; font-weight:800">6</span>
-        Booking, Cancellation &amp; Rescheduling
-      </h3>
-      <ul style="list-style:disc; margin-left:24px; color:var(--muted); font-size:0.95rem; line-height:1.8">
-        <li><strong>Flexible Rescheduling:</strong> You can reschedule your appointment at any time without penalty by contacting our support team at +91 7456884850.</li>
-        <li><strong>Cancellation:</strong> Bookings can be cancelled free of charge at any point prior to the technician's departure to your doorstep. If cancelled after the technician has reached your premises, nominal visiting charges may apply.</li>
-        <li><strong>Service Availability:</strong> We operate 7 days a week (Monday to Sunday, 8:00 AM to 9:00 PM). Emergency summer breakdown calls are prioritized based on technician availability.</li>
-      </ul>
-    </div>
-
-    <div class="terms-card" style="margin-bottom:36px; padding-bottom:32px; border-bottom:1px solid var(--border)">
-      <h3 class="h3" style="display:flex; align-items:center; gap:12px; font-size:1.4rem; margin-bottom:14px">
-        <span style="width:36px; height:36px; border-radius:10px; background:var(--frost); color:var(--sky); display:inline-flex; align-items:center; justify-content:center; font-size:1rem; font-weight:800">7</span>
-        Safety, Code of Conduct &amp; Liability
-      </h3>
-      <ul style="list-style:disc; margin-left:24px; color:var(--muted); font-size:0.95rem; line-height:1.8">
-        <li>Our technicians are trained, background-verified, and follow electrical safety protocols including power isolation before opening appliance panels.</li>
-        <li>Customers are requested to ensure safe working access to the indoor and outdoor unit locations, including balcony or rooftop access.</li>
-        <li>SK AC Repair Services is not liable for pre-existing latent cracks, wall moisture, or aged brittle plastics that degrade naturally over years of exposure.</li>
-      </ul>
-    </div>
-
-    <div class="terms-card" style="margin-bottom:10px">
-      <h3 class="h3" style="display:flex; align-items:center; gap:12px; font-size:1.4rem; margin-bottom:14px">
-        <span style="width:36px; height:36px; border-radius:10px; background:var(--frost); color:var(--sky); display:inline-flex; align-items:center; justify-content:center; font-size:1rem; font-weight:800">8</span>
-        Contact &amp; Grievance Redressal
-      </h3>
-      <p class="body" style="margin-bottom:16px">
-        For any questions, service feedback, warranty claims, or clarifications regarding these Terms &amp; Conditions, please reach out to our customer care team:
-      </p>
-      
-      <div style="background:var(--warm); border-radius:16px; padding:24px; border:1px solid var(--border); display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px">
-        <div>
-          <div style="font-size:0.75rem; font-weight:800; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em">Company</div>
-          <div style="font-size:1.05rem; font-weight:800; color:var(--navy); margin-top:3px">SK AC Repair Services</div>
-          <div style="font-size:0.86rem; color:var(--muted); margin-top:2px">Official Domain: skacrepairservice.in</div>
-        </div>
-        <div>
-          <div style="font-size:0.75rem; font-weight:800; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em">Helpline Numbers</div>
-          <div style="font-size:1rem; font-weight:700; color:var(--navy); margin-top:3px">
-            <a href="tel:+917456884850">+91 74568 84850</a> &nbsp;|&nbsp; <a href="tel:+918923202164">+91 89232 02164</a>
+        <!-- 2. INSPECTION & VISITING CHARGES -->
+        <article class="policy-card" id="terms-inspection">
+          <div class="policy-card-head">
+            <span class="policy-card-num">2</span>
+            <div>
+              <h2>Doorstep Inspection &amp; Visiting Charges</h2>
+              <span class="small">Fair diagnosis before any work</span>
+            </div>
           </div>
-          <div style="font-size:0.86rem; color:var(--muted); margin-top:2px">Available 7 Days: 8:00 AM – 9:00 PM</div>
-        </div>
-        <div>
-          <div style="font-size:0.75rem; font-weight:800; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em">Email Support</div>
-          <div style="font-size:1rem; font-weight:700; color:var(--navy); margin-top:3px">
-            <a href="mailto:skacrepairservice@gmail.com">skacrepairservice@gmail.com</a>
+          <p>When a technician is dispatched to your premises in Chandigarh, Mohali, Kharar, Zirakpur, or Panchkula:</p>
+          <ul class="policy-list">
+            <li>
+              <span class="material-symbols-outlined bullet-icon">task_alt</span>
+              <span><strong>Diagnostic Assessment:</strong> The technician will carefully inspect your appliance, identify faults, check electrical currents, gas pressures, or mechanical components, and diagnose the root cause.</span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined bullet-icon">task_alt</span>
+              <span><strong>Inspection &amp; Visiting Charge (₹299):</strong> A fixed doorstep inspection &amp; visiting charge of <strong>₹299</strong> applies for technician travel, on-site diagnostics, and safety testing across Chandigarh &amp; Mohali. However, <strong>if you proceed with the repair service or part replacement, this ₹299 visiting charge is 100% adjusted / waived</strong> against your total service invoice.</span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined bullet-icon">task_alt</span>
+              <span><strong>Decision to Decline:</strong> If you choose not to proceed with the repair after diagnosis, only the nominal visiting fee of ₹299 is payable for the technician's time and inspection.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- 3. QUOTES & PAYMENTS -->
+        <article class="policy-card" id="terms-quotes">
+          <div class="policy-card-head">
+            <span class="policy-card-num">3</span>
+            <div>
+              <h2>Quotations, Spare Parts &amp; Payments</h2>
+              <span class="small">Upfront clarity with no surprise fees</span>
+            </div>
+          </div>
+          <p>We pride ourselves on transparent billing. No work will begin without your prior verbal or written authorization after the cost estimate is shared.</p>
+          <div class="policy-callout">
+            <strong>Genuine Spare Parts:</strong> Any replacement components (compressors, capacitors, copper pipes, fan motors, PCB circuits, drain pipes, solenoids) provided by our team are 100% genuine and matched to your appliance's original specifications.
+          </div>
+          <p><strong>Payment Terms:</strong></p>
+          <ul class="policy-list">
+            <li><span class="material-symbols-outlined bullet-icon">credit_score</span><span>Payment is due immediately upon satisfactory completion of service and live demonstration.</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">credit_score</span><span>Accepted payment methods include Cash, UPI (Google Pay, PhonePe, Paytm), and direct IMPS/NEFT bank transfer.</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">credit_score</span><span>Digital or physical invoice slips detailing replaced parts and warranty terms are provided upon completion.</span></li>
+          </ul>
+        </article>
+
+        <!-- 4. WARRANTY -->
+        <article class="policy-card" id="terms-warranty">
+          <div class="policy-card-head">
+            <span class="policy-card-num">4</span>
+            <div>
+              <h2>90-Day Service Warranty &amp; Repair Guarantee</h2>
+              <span class="small">Our commitment to long-lasting repairs</span>
+            </div>
+          </div>
+          <p>We stand firmly behind our workmanship and the spare parts we install:</p>
+          <div class="policy-table-wrap">
+            <table class="policy-table">
+              <thead>
+                <tr>
+                  <th>Service / Component</th>
+                  <th>Warranty Period</th>
+                  <th>Warranty Coverage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Service / Component"><strong>AC Gas Charging (R32 / R410A / R22)</strong></td>
+                  <td data-label="Warranty Period">90-Day Warranty</td>
+                  <td data-label="Warranty Coverage">Covers refrigerant pressure drop and joint leaks repaired during the service session.</td>
+                </tr>
+                <tr>
+                  <td data-label="Service / Component"><strong>Repairs &amp; Genuine Spare Parts</strong></td>
+                  <td data-label="Warranty Period">Up to 90 Days*</td>
+                  <td data-label="Warranty Coverage">Covers recurring workmanship defects and premature failure of replaced components (capacitors, fan motors, sensors, PCB).</td>
+                </tr>
+                <tr>
+                  <td data-label="Service / Component"><strong>Copper Pipe Installation</strong></td>
+                  <td data-label="Warranty Period">Leakage Warranty</td>
+                  <td data-label="Warranty Coverage">Covers heavy-gauge pure copper brazing joint integrity and nitrogen pressure testing verification.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="policy-callout policy-callout-warning">
+            <strong>Warranty Conditions:</strong> Warranty is null and void if the repaired appliance is subsequently opened, tampered with, or modified by any unauthorized third-party technician, or in cases of external physical damage, power surge burning, or water flooding.
+          </div>
+        </article>
+
+        <!-- 5. SITE ACCESS & SAFETY -->
+        <article class="policy-card" id="terms-access">
+          <div class="policy-card-head">
+            <span class="policy-card-num">5</span>
+            <div>
+              <h2>Site Access &amp; Customer Responsibilities</h2>
+              <span class="small">Ensuring safe working conditions</span>
+            </div>
+          </div>
+          <p>To enable safe and timely completion of repair work, customers are requested to:</p>
+          <ul class="policy-list">
+            <li><span class="material-symbols-outlined bullet-icon">security</span><span>Provide safe and unobstructed access to indoor and outdoor units, water sources, and power outlets.</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">security</span><span>Ensure an adult representative (aged 18 or above) is present at the premises during technician service.</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">security</span><span>For high-rise building outdoor installations, ensure society permissions and standard balconies or duct access are accessible. If special scaffolding or high-reach cranes are needed, costs are discussed in advance.</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">security</span><span>Inspect the appliance with our technician during the testing cycle before signing off on service completion.</span></li>
+          </ul>
+        </article>
+
+        <!-- 6. RESCHEDULING & CANCELLATION -->
+        <article class="policy-card" id="terms-cancel">
+          <div class="policy-card-head">
+            <span class="policy-card-num">6</span>
+            <div>
+              <h2>Rescheduling, Cancellation &amp; Delays</h2>
+              <span class="small">Flexible booking with mutual respect</span>
+            </div>
+          </div>
+          <p>We understand schedules can change:</p>
+          <ul class="policy-list">
+            <li>
+              <span class="material-symbols-outlined bullet-icon">history_toggle_off</span>
+              <span><strong>Free Cancellation / Rescheduling:</strong> You may cancel or postpone your service appointment at any time before the technician departs for your location without any cancellation fee.</span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined bullet-icon">history_toggle_off</span>
+              <span><strong>Traffic &amp; Weather Delays:</strong> While we target 1–2 hour arrival across Chandigarh and Mohali, severe monsoon downpours, traffic blockages, or extended emergency repairs on prior jobs may occasionally cause arrival adjustments. In such cases, our team will proactively inform you.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- 7. OLD AC BUYING -->
+        <article class="policy-card" id="terms-old-ac">
+          <div class="policy-card-head">
+            <span class="policy-card-num">7</span>
+            <div>
+              <h2>Old AC Buying &amp; Scrap Valuation Terms</h2>
+              <span class="small">Fair pricing and hassle-free pickup</span>
+            </div>
+          </div>
+          <p>SK AC Repair Services buys old, working, non-working, and scrap Split and Window air conditioners:</p>
+          <ul class="policy-list">
+            <li><span class="material-symbols-outlined bullet-icon">currency_rupee</span><span><strong>Transparent Valuation:</strong> Price offers depend on unit tonnage, compressor condition, copper coil quality, aluminium status, and overall appliance age.</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">currency_rupee</span><span><strong>Free Doorstep Dismantling:</strong> Uninstallation and removal of the old unit are managed safely by our technicians at no hidden labour deduction.</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">currency_rupee</span><span><strong>Instant Settlement:</strong> Full payment is transferred to you instantly via Cash or UPI before the unit leaves your premises.</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">currency_rupee</span><span><strong>Proof of Ownership:</strong> The seller affirms that they are the rightful owner of the appliance being sold.</span></li>
+          </ul>
+        </article>
+
+        <!-- 8. LEGAL & GRIEVANCES -->
+        <article class="policy-card" id="terms-legal">
+          <div class="policy-card-head">
+            <span class="policy-card-num">8</span>
+            <div>
+              <h2>Limitation of Liability &amp; Governing Law</h2>
+              <span class="small">Jurisdiction and contact resolution</span>
+            </div>
+          </div>
+          <p>SK AC Repair Services strives to maintain the highest standard of appliance care. To the maximum extent permitted by applicable Indian laws:</p>
+          <ul class="policy-list">
+            <li><span class="material-symbols-outlined bullet-icon">balance</span><span>We are not liable for pre-existing internal appliance decay, structural corrosion, or damages caused by faulty residential electrical wiring or phase drops.</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">balance</span><span>Our total financial liability in relation to any service shall not exceed the amount actually paid by the customer for that specific service job.</span></li>
+            <li><span class="material-symbols-outlined bullet-icon">balance</span><span>These terms are governed by and construed under the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the competent courts in Chandigarh / Mohali.</span></li>
+          </ul>
+
+          <h3 style="margin-top:24px">Contact &amp; Grievance Helpdesk</h3>
+          <div class="policy-contact-grid">
+            <div class="policy-contact-box">
+              <span class="material-symbols-outlined">storefront</span>
+              <div>
+                <h6>Workshop Address</h6>
+                <p>Jujhar Nagar, 39 West Society, Near Indian Bank of India, Chandigarh - 160055</p>
+              </div>
+            </div>
+
+            <div class="policy-contact-box">
+              <span class="material-symbols-outlined">call</span>
+              <div>
+                <h6>Call Support</h6>
+                <p><a href="tel:+917456884850">+91 74568 84850</a><br><a href="tel:+918923202164">+91 89232 02164</a></p>
+              </div>
+            </div>
+
+            <div class="policy-contact-box">
+              <span class="material-symbols-outlined">mail</span>
+              <div>
+                <h6>Email Us</h6>
+                <p><a href="mailto:skacrepairservice@gmail.com">skacrepairservice@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="policy-contact-box">
+              <span class="material-symbols-outlined">schedule</span>
+              <div>
+                <h6>Operating Hours</h6>
+                <p>Mon–Sun: 8:00 AM – 9:00 PM (Every Day)</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CTA BANNER -->
+        <div class="policy-cta-banner">
+          <h3>Ready to Book a Professional Appliance Repair?</h3>
+          <p>Call or WhatsApp SK AC Repair Services for immediate, honest doorstep assistance across Chandigarh &amp; Mohali.</p>
+          <div class="policy-cta-actions">
+            <a href="tel:+917456884850" class="btn btn-sky" style="background:#fff; color:var(--navy)">
+              <span class="material-symbols-outlined" style="font-size:1.1rem">call</span> Call +91 7456884850
+            </a>
+            <a href="https://wa.me/917456884850?text=Hello%20SK%20AC%20Repair%20Services,%20I%20would%20like%20to%20book%20a%20service." target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <span class="material-symbols-outlined" style="font-size:1.1rem">chat</span> WhatsApp Us
+            </a>
+            <a href="/services" class="btn btn-ghost">Explore All Services →</a>
           </div>
         </div>
-        <div>
-          <div style="font-size:0.75rem; font-weight:800; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em">Head Office</div>
-          <div style="font-size:0.9rem; font-weight:700; color:var(--navy); margin-top:3px; line-height:1.5">
-            Jujhar Nagar, 39 West Society, Near Indian Bank of India, Chandigarh / Mohali
-          </div>
-        </div>
+
       </div>
     </div>
-
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="about-cta rv" style="margin-top:0">
-  <div class="lbl" style="color:#fff; margin-bottom:12px">Ready to Book?</div>
-  <h2 class="h2">Get fast, guaranteed doorstep service today</h2>
-  <p class="body">Certified technicians, transparent pricing, and 90-day warranty across Chandigarh &amp; Mohali.</p>
-  <div class="hero-ctas" style="justify-content:center">
-    <a href="/#contact" class="btn btn-sky">Book a Service Now</a>
-    <a href="https://wa.me/917456884850" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Chat on WhatsApp</a>
   </div>
 </section>
 
