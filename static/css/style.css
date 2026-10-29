@@ -4750,6 +4750,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   background: linear-gradient(
     135deg,
     rgba(0, 150, 101, 0.08) 0%,
@@ -4757,9 +4758,13 @@ footer {
   );
   border: 1.5px solid rgba(0, 150, 101, 0.22);
   border-radius: 14px;
-  padding: 10px 16px;
+  padding: 10px 14px;
   margin: 0 0 16px 0;
-  gap: 10px;
+  gap: 8px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   transition: all 0.25s ease;
 }
 .svc-card:hover .svc-price-row {
@@ -4787,25 +4792,28 @@ footer {
 }
 .sp-amount {
   font-family: var(--fh);
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--navy);
-  line-height: 1.1;
+  line-height: 1.15;
+  white-space: nowrap;
 }
 
 .sp-badge-tag {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: var(--sky2);
   background: #fff;
   border: 1px solid rgba(0, 150, 101, 0.25);
-  padding: 4px 10px;
+  padding: 4px 9px;
   border-radius: 50px;
   white-space: nowrap;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+  max-width: 100%;
 }
 .sp-badge-tag .material-symbols-outlined {
   font-size: 0.95rem;
@@ -4852,9 +4860,10 @@ footer {
     margin-bottom: 16px;
   }
   .svc-price-row {
-    padding: 9px 14px;
+    padding: 8px 12px;
     margin: 0 0 14px 0;
     gap: 8px;
+    flex-wrap: wrap;
   }
   .sp-amount {
     font-size: 1.25rem;
@@ -4920,10 +4929,10 @@ footer {
     gap: 8px;
   }
   .svc-price-row {
-    padding: 8px 12px;
+    padding: 8px 10px;
     margin: 0 0 12px 0;
-    gap: 8px;
-    flex-direction: row;
+    gap: 6px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
@@ -4968,10 +4977,11 @@ footer {
   }
   .svc-price-row {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 6px;
-    padding: 7px 10px;
+    padding: 7px 8px;
     margin: 0 0 10px 0;
   }
   .sp-amount {
