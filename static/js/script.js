@@ -249,6 +249,17 @@ setTimeout(() => {
     }
 }, 5000);
 
+function openBookingModal(serviceName) {
+    const popup = document.getElementById('contactModalOverlay');
+    const svcSelect = document.getElementById('pService');
+    if (svcSelect && typeof serviceName === 'string') {
+        svcSelect.value = serviceName;
+    }
+    if (popup) {
+        popup.classList.add('active');
+    }
+}
+
 function closeContactModal() {
     const popup = document.getElementById('contactModalOverlay');
     if(popup) {
@@ -256,28 +267,41 @@ function closeContactModal() {
     }
 }
 
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeContactModal();
+        closeModal();
+    }
+});
+
 function submitPopupToWhatsapp() {
-    const name = document.getElementById('pName').value;
-    const phone = document.getElementById('pPhone').value;
-    const area = document.getElementById('pArea').value;
-    const details = document.getElementById('pDetails').value;
-    
-    if(!name || !phone || !area) {
-        alert('Please fill in Your Name, Phone Number, and Area.');
+    const nameEl = document.getElementById('pName');
+    const phoneEl = document.getElementById('pPhone');
+    const svcEl = document.getElementById('pService');
+    const areaEl = document.getElementById('pArea');
+    const detailsEl = document.getElementById('pDetails');
+
+    const name = nameEl ? nameEl.value.trim() : '';
+    const phone = phoneEl ? phoneEl.value.trim() : '';
+    const service = svcEl ? svcEl.value : '';
+    const area = areaEl ? areaEl.value : '';
+    const details = detailsEl ? detailsEl.value.trim() : '';
+
+    if(!name || !phone) {
+        alert('Please enter Your Name and Phone Number to book an appointment.');
         return;
     }
-    
-    const message = `*SK AC Repair Services - Booking Request*\n\n` +
+
+    const message = `*SK AC Repair Services - New Appointment*\n\n` +
                     `*Name:* ${name}\n` +
                     `*Phone:* ${phone}\n` +
-                    `*Area:* ${area}\n` +
-                    `*Details:* ${details || 'N/A'}\n\n` +
-                    `Please confirm my booking slot.`;
-                    
+                    `*Service:* ${service || 'AC / Appliance Service'}\n` +
+                    `*Area:* ${area || 'Chandigarh / Mohali'}\n` +
+                    (details ? `*Message:* ${details}\n` : '') +
+                    `\nPlease confirm my doorstep appointment.`;
+
     const encoded = encodeURIComponent(message);
-    const waUrl = `https://wa.me/917456884850?text=${encoded}`;
-    
-    window.location.href = waUrl;
+    window.location.href = `https://wa.me/917456884850?text=${encoded}`;
 }
 
 

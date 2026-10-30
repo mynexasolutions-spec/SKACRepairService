@@ -6226,3 +6226,63 @@ footer {
 .review-card {
   background: linear-gradient(135deg, #d97706 0%, #ea580c 60%, #c2410c 100%);
 }
+
+/* 4. Global Book an Appointment Modal & Smooth Anchor Offset */
+.appt-top-sec {
+  scroll-margin-top: 135px;
+}
+.modal-box.appt-modal-box {
+  padding: 0;
+  border-radius: 16px;
+  border: 1.5px solid #e2e8f0;
+  max-width: 490px;
+  width: calc(100% - 28px);
+  max-height: calc(100dvh - 32px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #ffffff;
+}
+.appt-modal-box .appt-card-head {
+  flex-shrink: 0;
+  padding-right: 48px;
+  padding-left: 48px;
+}
+.appt-modal-box .appt-card-body {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.appt-modal-close {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-size: 1.35rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+.appt-modal-close:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+@media (max-width: 480px) {
+  .appt-top-sec {
+    scroll-margin-top: 86px;
+  }
+  .modal-box.appt-modal-box {
+    width: calc(100% - 20px);
+    max-height: calc(100dvh - 24px);
+  }
+  .appt-modal-box .appt-card-head {
+    padding: 15px 42px;
+  }
+}
