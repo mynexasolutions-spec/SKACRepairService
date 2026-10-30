@@ -239,7 +239,8 @@ setTimeout(() => {
     const isHomePage = window.location.pathname === '/';
     const hasSeenPopup = localStorage.getItem('popupShown');
     
-    if (isHomePage && !hasSeenPopup) {
+    const activeInTopForm = document.activeElement && document.activeElement.closest && document.activeElement.closest('#book-appointment');
+    if (isHomePage && !hasSeenPopup && !activeInTopForm && window.scrollY > 500) {
         const popup = document.getElementById('contactModalOverlay');
         if(popup) {
             popup.classList.add('active');
@@ -314,4 +315,36 @@ function scrollReviewsCarousel(dir) {
     const card = track.querySelector('.rc-card:not(.hidden)');
     const cardWidth = card ? card.offsetWidth + 20 : 320;
     track.scrollBy({ left: cardWidth * dir, behavior: 'smooth' });
+}
+
+
+// TOP BOOK AN APPOINTMENT FORM SUBMISSION
+function submitTopAppointment() {
+    const nameEl = document.getElementById('apptName');
+    const phoneEl = document.getElementById('apptPhone');
+    const serviceEl = document.getElementById('apptService');
+    const areaEl = document.getElementById('apptArea');
+    const msgEl = document.getElementById('apptMessage');
+
+    const name = nameEl ? nameEl.value.trim() : '';
+    const phone = phoneEl ? phoneEl.value.trim() : '';
+    const service = serviceEl ? serviceEl.value : '';
+    const area = areaEl ? areaEl.value : '';
+    const msg = msgEl ? msgEl.value.trim() : '';
+
+    if (!name || !phone) {
+        alert('Please enter Your Name and Phone Number to book an appointment.');
+        return;
+    }
+
+    const message = `*SK AC Repair Services - New Appointment*\n\n` +
+                    `*Name:* ${name}\n` +
+                    `*Phone:* ${phone}\n` +
+                    `*Service:* ${service || 'AC / Appliance Service'}\n` +
+                    `*Area:* ${area || 'Chandigarh / Mohali'}\n` +
+                    (msg ? `*Message:* ${msg}\n` : '') +
+                    `\nPlease confirm my doorstep appointment.`;
+
+    const encoded = encodeURIComponent(message);
+    window.location.href = `https://wa.me/917456884850?text=${encoded}`;
 }
