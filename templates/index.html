@@ -1326,7 +1326,7 @@
       <div class="testi-pill">
         <div>
           <div class="tp-t">5.0 Star Rated Experience</div>
-          <div class="tp-s">★★★★★ 29+ Verified Reviews</div>
+          <div class="tp-s">★★★★★ 140+ Verified Reviews</div>
         </div>
       </div>
     </div>
@@ -1334,19 +1334,22 @@
     <!-- CATEGORY FILTER TABS -->
     <div class="review-filter-bar">
       <button class="rf-btn active" onclick="filterReviews('all', this)">
-        All Reviews <span class="rf-count">29</span>
+        All Reviews <span class="rf-count">142</span>
       </button>
       <button class="rf-btn" onclick="filterReviews('gas-charging', this)">
-        Gas Charging <span class="rf-count">7</span>
+        Gas Charging <span class="rf-count">29</span>
       </button>
       <button class="rf-btn" onclick="filterReviews('ac-installation', this)">
-        Installation &amp; Dismantle <span class="rf-count">5</span>
+        Installation &amp; Dismantle <span class="rf-count">59</span>
       </button>
       <button class="rf-btn" onclick="filterReviews('repair-pcb', this)">
-        PCB &amp; Leakage Repair <span class="rf-count">6</span>
+        PCB &amp; Leakage Repair <span class="rf-count">26</span>
       </button>
       <button class="rf-btn" onclick="filterReviews('ac-service', this)">
-        AC Service &amp; Wash <span class="rf-count">17</span>
+        AC Service &amp; Wash <span class="rf-count">48</span>
+      </button>
+      <button class="rf-btn" onclick="filterReviews('other-services', this)">
+        Other Appliances &amp; Reviews <span class="rf-count">17</span>
       </button>
     </div>
 
@@ -1417,6 +1420,7 @@
             installation done sk ac repair service Chandigarh best service
             provider"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="gas-charging ac-service">
           <div class="rc-head">
@@ -1441,6 +1445,7 @@
             "Gas charging lg ac Ac service good ser6sk ac repair service
             chandigarh best service done 👍"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="ac-service">
           <div class="rc-head">
@@ -1467,8 +1472,9 @@
             When needed: Every season before regular use, or if airflow is low /
             foul odor is present. Sk ac repair service providers Best service"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
-        <div class="rc-card" data-category="gas-charging ac-installation">
+        <div class="rc-card" data-category="gas-charging ac-installation other-services">
           <div class="rc-head">
             <div class="rc-avatar av-teal">HR</div>
             <div class="rc-meta">
@@ -1491,6 +1497,7 @@
             "Lg Ac gas charging and installation And geyser installation also
             good service Sk Ac repair service excellent job person also good 👍"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="ac-installation">
           <div class="rc-head">
@@ -1515,6 +1522,7 @@
             "Three Ac Dismantle excellent service Sk ac repair service service
             provider best service chandigarh try city"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="ac-service">
           <div class="rc-head">
@@ -1539,6 +1547,7 @@
             "Ac service form service good service affordable price excellent job
             👍🏻 sk ac Repair Service"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="ac-service">
           <div class="rc-head">
@@ -1563,6 +1572,7 @@
             "ac service ke liye bulaye The hamne Bahoot hi achchi service kiye h
             sk ac repair service providers best service Chandigarh 👍"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="repair-pcb">
           <div class="rc-head">
@@ -1587,6 +1597,7 @@
             "Ac not working wiring Loos connect good service sk ac repair
             service provider best done ✅"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="repair-pcb">
           <div class="rc-head">
@@ -1632,6 +1643,7 @@
             "Ac installation good experience person good 👍 iam very sk ac
             repair service try city 😀 …"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="gas-charging">
           <div class="rc-head">
@@ -1680,6 +1692,7 @@
             providers best service try city Chandigarh nice person satisfied 😊
             …"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="ac-service">
           <div class="rc-head">
@@ -1705,6 +1718,7 @@
             arrived on time and completed the job efficiently. Highly
             recommended!"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="repair-pcb">
           <div class="rc-head">
@@ -1729,6 +1743,7 @@
             "Pcb repair Good service affordable pric3 nice person sk ac repair
             service best service chandigarh"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="gas-charging ac-service">
           <div class="rc-head">
@@ -1753,6 +1768,7 @@
             "Service gas charging also good Service affordable price sk ac
             repair service best service chandigarh"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="ac-service">
           <div class="rc-head">
@@ -1845,6 +1861,7 @@
             "Tow ac service good service affordable price genuine price 👍 good
             service service sk ac repair Service providers …"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="ac-service">
           <div class="rc-head">
@@ -2002,6 +2019,7 @@
             "Bhot Hi Axha kaam krte h Sk ac Repair service wale iam very happy
             good behaviour person done 👍🏻 …"
           </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
         </div>
         <div class="rc-card" data-category="ac-installation">
           <div class="rc-head">
@@ -2047,6 +2065,2617 @@
             "Bhot axha kaam karte h sk ac repair service wale good service"
           </p>
         </div>
+<div class="rc-card" data-category="ac-installation repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">YB</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Yuvraj Bhandari
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation bhot acha ac fiting kiye h hamari so ac repair service providers best service"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="ac-installation repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">RD</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Rahul dev Dwivedi
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Tow ac installation and service satisfied affordable price good behaviour nice person iam very happy Sk Ac Repair Service provider best service chandigarh and new chandigarh also"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">IS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Inderjit singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service nice person affordable price excellent job"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">CP</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                chankey phutela
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation nice service good person excellent job"
+          </p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">DS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Dharmender Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Bhot acha kaam karte h sk ac repair service wale. Or price bhi jenuine hain good service"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="ac-installation repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">NK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                nidhi Kapil
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Good service @ super fast installation sk ac repair service wale bhot achi service provider h"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">MA</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Mohd Afzal
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Daikin Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Daikin ac gas charging done good service affordable price Nice person Just doit"
+          </p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">PS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Panjab Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Capacitor Change</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Tow window ac service one ac repair change capceter also good @ affordable price iam very happy sk ac repair service"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="ac-installation repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">GT</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Geet Thakur
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service nice person sk ac repair service provider best service"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="gas-charging ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">UV</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Uttara Vadhan
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Gas charging installation good service nice person affordable price sk airconditioner Just click"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">AD</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                anshu dhiman
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service exlent job nice work"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">SR</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Sangeeta Rawat
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Leakage Repair</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej ac leakage problem Gas charging done good service sk ac repair service providers best service Chandigarh"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">SK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Shimpi Kumar
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation good nice service affordable price happy"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">SM</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Sapna Mangal
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service best sk ac repair service provider Kharar"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">JS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Jagtar Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation Good service iam this person sk ac repair service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">SD</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Sonia Dudeija
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Good service installation done nice service @ iam happy with person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">DS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Deepraj Sharma
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Nice services and good gas charging prices"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">PR</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                purchase redbeanhospitality
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service super job bro"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">SR</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Sudhir Rana
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Gas charging done affordable price good service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">JS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Jassi Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Hitachi Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation good nice service Hitachi and godrej affordable price sk airconditioner Best price service"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">BS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Baljeet Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installatione good service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">RS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Ranjit Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation exelent job nice service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">TR</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Travelwayconsultancy
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "installation done iam very satisfied person good working"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">RN</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Ram Niwas
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Leakage Repair</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Gas leakage problem solved. Good service provided."
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">KM</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Krishna Mam
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Gas charging repair also done good behavior"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">DG</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                DR Gurcharan kamboj
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good work service also"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">KN</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Kumar Neelu
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Fixing done nice person affordable prise gas changing including"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">II</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                INVESTING IDEAS
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service supper fast service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">KV</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Karan Veer
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Great service, very polite and humble expert in their field"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">AA</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Armaan Arora
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation good service affordable price just doit"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">YO</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Yogesht
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation done super fast service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">RJ</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Rishit Jassal
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation good service nice person affordable price"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">DS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Deepak Salunke
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation good service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">GS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Gurnam Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Voltas ac gas charging Hitachi gas charging affordable price good work iam very happy sk ac repair service"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="gas-charging repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">SK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                sunil kumar
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Hitachi AC gas charging and service affordable price export person sk ac Repair service nice person done"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">SD</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Sunil Dharwal
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation Good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">SK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                sara Khan
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation goos service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">AN</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                ANKITAK
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation done with service nice person affordable price ok"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">MK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Manshi Katariya
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installed good service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">CS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Chander Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">PCB Board Repair</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Lg pcb change Good service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">GA</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                gauravbhandari
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Super service nice done"
+          </p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">BS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Balwinder Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Leakage Repair</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Water lekeag problem solved good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">NM</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Navjot Mall
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service nice person affordable price good work"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">PS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Pranit Sharma
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Gas charging good service nice person affordable prise"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">BS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Bakhshish Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "AC gas charging done bhot acha kaam kiye h"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">AC</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Ashish Chadak
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Ac service done good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">SA</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                SANG AM
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Window ac repair good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">GM</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Gaurav Malhotra
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Leakage Repair</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Water leakage problem solved"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">AS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Alisha Shyam
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "AC services done good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">RG</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Rikin Gurung
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Underground Piping</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Instalation + piping good work"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">R0</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                raman891 0
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Daikin AC Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Daikin 6 Ac Sercice good Service affordable prices"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">AA</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Arman Ansari
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Fridge Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Lg fridge Gas charging affordable price Good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">RB</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Raj bhadhur
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation Good service Nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">LS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Lakhwinder Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation gas charging done good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">SB</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Sanjeev bhardwaj
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation Good service excellent nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">MK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Manpreet Kaur
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service nice person affordable price nice work"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">KS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                kamaljeet singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">2 AC Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Ac service done 2 ac affordable price good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">AM</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Ankur Menta
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Gas charging plus service good person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">DR</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Diksha Rana
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">SN</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                siya Nanda
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Underground Piping</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Carrier ac installation piping good nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">SM</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Swapan Maini
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "godrej installation good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">ST</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Sony Thulewal
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">LG Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Lg installation Good service Nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">JK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Japinder Kaur
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Instalation Good nice person Good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">AA</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Akshay Akshay__viamik
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Ac check and service good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">JS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Jatinderpal singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Underground Piping</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Under ground piping affordable price good work"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">ME</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Meenakshi
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Very well Ac service done"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">RK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Raj Kumar
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation done good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">VK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                vicky kumar
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "carrier ac gas charging service done"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">FM</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                finder maurya
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Gas charging capciter change g00d service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">SY</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Sachin yadav
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation done good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">AV</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Ayush Verma
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation done' Good work"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">KJ</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Kamila Jassi
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation Good service Nice person tow ac installation and service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">NB</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Ninja Boy
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Acha service done' good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">JS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Jasbir Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Ac service good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">DF</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Dpsproduction Fim
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">GS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Gurvinder Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "instalationgood service done"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">DJ</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Divyanshu Jaiswar
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">2 AC Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Haider service 2 ac affordable price Good service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">SP</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Sahil Panghal
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Best Sevice ,Genuine Person!!!"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">GG</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Gaurav Gaur
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Ac installation good service all over service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">VT</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Vikram Thakur
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Hitachi AC Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Hitachi air-conditioned services done nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">AS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Anish Sharma
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">MS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Mohd Shahnawaz
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Multi AC Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Ac service 3 ac good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">RG</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Rohit Garg
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Good service LG nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">AO</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Alfaaz Officially
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Professional service in Chandigarh all experience"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">MS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Mahesh soni
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Multi AC Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Three ac service nice person Good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">PR</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Pb48 Records
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Split AC Gas</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Hevels airconditioning split ac gas charing don"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">RS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Rajinder Sekhon
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Ac service done Nice person Good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">AS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                aman singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation done good behavior nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">AB</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Alit Biswas
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Lloyd Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Gas charging Lloyd air-conditioning Good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">HS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                HARVINDER SINGH
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Good genuine service with reasonable rates"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">AA</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Arfat Ansari
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Good affordable price and best services"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">MB</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                miury bhatia
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Three ac services one ac gas changing done"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">AG</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Anil Gogliya
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Gas charging service over all good"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">RS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Rohit Sheryar
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">2 AC Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Ac servic done 2 ac"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">SK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                satinder kaur
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Best services"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">PK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Pushpinder Kaur
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Very good service 4 & and always come on time"
+          </p>
+        </div>
+        <div class="rc-card" data-category="gas-charging">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">VK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Vipin Kumar
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Gas Charging</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Gas charging service overall good"
+          </p>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">SK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Suraj Kumar
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Fault Diagnosis</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Good work. Good analysis of faults."
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">FR</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                farhan raza
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Very good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">RD</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Rahul Dhiman
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Lloyd airconditioner ac service installation"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">VC</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Verified Customer
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Window AC Install</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Window AC installation done with service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">RK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                RAMESH KUMAR
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">K8</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Kamil 8p
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Nice work"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">PS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Prince Singh
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Neat clean efficient service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">PS</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                pooja shashni
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Nice work done"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">DK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Danesh Khan
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Good service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-purple">KA</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                KANG
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Excellent"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service other-services">
+          <div class="rc-head">
+            <div class="rc-avatar av-amber">SK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Soheb Khan
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Good service"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-teal">AK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Aklesh Kumar
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Window AC Install</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Window ac Installation Good service affordable price sk ac repair service nice person excellent job"
+          </p>
+          <button type="button" class="rc-read-more" onclick="toggleReadMore(this)" aria-expanded="false">Read more &hellip;</button>
+        </div>
+        <div class="rc-card" data-category="repair-pcb">
+          <div class="rc-head">
+            <div class="rc-avatar av-indigo">VW</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Vansh Walia
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Repair</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Panasonic ac not working problem solved done"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-pink">SG</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Sharan Gill
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Godrej Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Godrej installation good service nice person affordable price excellent job"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-service">
+          <div class="rc-head">
+            <div class="rc-avatar av-blue">RK</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Rahul Kumar
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">Verified Service</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Ac service good service nice person"
+          </p>
+        </div>
+        <div class="rc-card" data-category="ac-installation">
+          <div class="rc-head">
+            <div class="rc-avatar av-emerald">RT</div>
+            <div class="rc-meta">
+              <div class="rc-name">
+                Rekha Tayal
+                <span
+                  class="material-symbols-outlined rc-v-icon"
+                  title="Verified Customer"
+                  >verified</span
+                >
+              </div>
+            </div>
+            <div class="rc-tag">AC Installation</div>
+          </div>
+          <div class="rc-stars-row">
+            <div class="rc-stars">★★★★★</div>
+            <span class="rc-rating-num">5.0</span>
+          </div>
+          <p class="rc-text">
+            "Installation Good Nice service"
+          </p>
+        </div>
       </div>
 
       <button
@@ -2071,7 +4700,7 @@
     <div class="rc-carousel-footer">
       <div class="rc-swipe-hint">
         <span class="material-symbols-outlined">swipe</span> Swipe or click
-        arrows to explore all 29 reviews
+        arrows to explore all 142 reviews
       </div>
       <div class="rc-carousel-actions">
         <button

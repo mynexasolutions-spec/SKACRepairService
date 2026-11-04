@@ -341,6 +341,51 @@ function scrollReviewsCarousel(dir) {
     track.scrollBy({ left: cardWidth * dir, behavior: 'smooth' });
 }
 
+function toggleReadMore(btn) {
+    const card = btn.closest('.rc-card');
+    if (!card) return;
+    const textEl = card.querySelector('.rc-text');
+    if (!textEl) return;
+    const isExpanded = textEl.classList.toggle('expanded');
+    btn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+    btn.innerHTML = isExpanded ? 'Read less &uarr;' : 'Read more &hellip;';
+}
+
+// Allow tapping clamped review text to expand
+document.addEventListener('click', function(e) {
+    const textEl = e.target.closest('.rc-text');
+    if (textEl && !textEl.classList.contains('expanded')) {
+        const card = textEl.closest('.rc-card');
+        const btn = card ? card.querySelector('.rc-read-more') : null;
+        if (btn) {
+            toggleReadMore(btn);
+        }
+    }
+});
+
+// Auto-detect clipped reviews on load and window resize
+function checkClampedReviews() {
+    document.querySelectorAll('.rc-card').forEach(card => {
+        const textEl = card.querySelector('.rc-text');
+        if (!textEl) return;
+        let btn = card.querySelector('.rc-read-more');
+        if (!textEl.classList.contains('expanded')) {
+            const isClipped = textEl.scrollHeight > (textEl.clientHeight + 2);
+            if (isClipped && !btn) {
+                btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'rc-read-more';
+                btn.setAttribute('aria-expanded', 'false');
+                btn.innerHTML = 'Read more &hellip;';
+                btn.onclick = function() { toggleReadMore(this); };
+                textEl.insertAdjacentElement('afterend', btn);
+            }
+        }
+    });
+}
+window.addEventListener('DOMContentLoaded', checkClampedReviews);
+window.addEventListener('resize', checkClampedReviews);
+
 
 // TOP BOOK AN APPOINTMENT FORM SUBMISSION
 function submitTopAppointment() {

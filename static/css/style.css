@@ -4678,6 +4678,42 @@ footer {
   color: var(--navy2);
   flex-grow: 1;
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  transition: all 0.25s ease;
+}
+
+.rc-text.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.rc-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: none;
+  border: none;
+  color: var(--sky);
+  font-family: var(--fb);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px 0 0 0;
+  margin-top: 6px;
+  align-self: flex-start;
+  transition: color 0.2s ease;
+  user-select: none;
+}
+
+.rc-read-more:hover {
+  color: var(--navy);
+  text-decoration: underline;
 }
 
 /* CAROUSEL ARROWS */
